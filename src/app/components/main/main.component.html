@@ -17,7 +17,7 @@
           <mat-icon>search</mat-icon>
         </span>
         <mat-label>Buscar</mat-label>
-        <input matInput placeholder="Buscar">
+        <input matInput placeholder="Buscar" autofocus="false" tabindex="-1">
       </mat-form-field>
     </div>
     <div class="navigation-links-container">
@@ -30,7 +30,7 @@
     </div>
   </mat-sidenav>
   <mat-sidenav-content>
-    <app-header (toggleSidenav)="sidenav.toggle()"></app-header>
+    <app-header (toggleSidenav)="sidenav.toggle()" (toggleSidenav)="scrollToTop()"></app-header>
     <div class="router-outlet-container">
       <router-outlet></router-outlet>
     </div>

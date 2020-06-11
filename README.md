@@ -25,3 +25,29 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+# Inspiracion
+
+## Informacion
+
+https://elitecbd.mx/
+https://cbdcentral.mx/
+
+## Diseño
+
+https://purekana.com/
+https://cbd-one.co.uk/
+https://royalcbd.com/
+https://ocs.ca/
+https://www.medicalmarijuanainc.com
+https://premiumjane.com/
+https://www.leafly.com/
+https://www.directcbdonline.com/
+https://justcbdstore.com/
+https://www.thecbdistillery.com/
+https://www.endoca.com/
+https://nuleafnaturals.com/
+https://cbdfx.com/
+https://cbdamericanshaman.com/
+
+

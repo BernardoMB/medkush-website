@@ -253,139 +253,11 @@
   }
 }
 
-
-
-
-.sticky-headerp {
-  position: fixed;
-  top: 0;
-  height: 0;
-  opacity: 0;
-  transition: opacity .25s ease-out, height .15s ease;
-  cursor: default;
-  user-select: none;
-  // Modified by me
-  z-index: 9;
-  width: 100%;
-  .header-container {
-    background-color: rgba(0, 0, 0, 0.85);
-    box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 2px 1px 0 rgba(20, 23, 28, 0.1);
-    color: white;
-    //
-    max-width: 1440px;
-    padding: 10px 40px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    .logo-container{
-      img {
-        height: 28px;
-        margin-right: 20px;
-      }
-    }
-    .navigation-container {
-      display: flex;
-      align-items: center;
-      a {
-        text-decoration: none;
-        cursor: pointer;
-        text-transform: uppercase;
-        position: relative;
-        font-size: 10px;
-        letter-spacing: 1.535px;
-        font-family: 'Barlow', sans-serif;
-        font-weight: bold;
-        color: white;
-        margin-right: 20px;
-        &.active {
-          color: #9dff66;
-        }
-        &:hover {
-          color: #58a429;
-        }
-        @media screen and (max-width: 1180px) {
-          letter-spacing: unset;
-        }
-      }
-    }
-    .store-container {
-      display: flex;
-      align-items: center;
-      .left {
-        width: 100%;
-        .search-container {
-          color: white;
-          mat-form-field {
-            margin-right: 20px;
-          }
-          ::ng-deep {
-            mat-label {
-              color: white;
-            }
-            .mat-form-field-wrapper  {
-              width: 100%;
-              margin: 0px;
-              padding: 0px;
-              .mat-form-field-subscript-wrapper {
-                padding: 0px;
-                font-size: 0px;
-                margin: 0px;
-                display: none;
-              }
-            }
-          }
-        }
-      }
-      .right {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-        .buttons-conatiner {
-          min-width: 172px;
-          button {
-            margin-right: 10px;
-            line-height: 24px;
-          }
-          .login-button {
-            background-color: #b844a7;
-          }
-          .register-button {
-            background-color: #f78b0d;
-          }
-        }
-        .cart-container {
-          display: flex;
-          align-items: center;
-          ::ng-deep {
-            mat-icon {
-              span {
-                background-color: #9dff66;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  @media screen and (max-width: 960px) {
-    display: none;
-  }
-}
-
 .sticky-header-mobile {
-  // z-index: 9;
-  // position: relative;
-  // box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 2px 1px 0 rgba(20, 23, 28, 0.1);
-  // color: white;
-  // display: flex;
-  // align-items: center;
-
   justify-content: space-between;
   align-items: center;
   background-color: black;
   color: white;
-
   position: fixed;
   top: 0;
   height: 0;
@@ -431,9 +303,6 @@
     display: flex;
   }
 }
-
-
-
 
 .sticky {
   height: 64px;

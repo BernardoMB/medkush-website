@@ -5,15 +5,28 @@
     [(opened)]="opened"
   >
     <div class="logomark-container">
-      <!-- <img class="om-logomark" src="/assets/img/logos/om/om-logomark-white.svg" alt="om logomark"/> -->
+      <img class="om-logomark" src="/assets/img/logos/medkush/medkush-logo.svg" alt="om logomark"/>
+    </div>
+    <div class="buttons-conatiner">
+      <button mat-flat-button class="login-button">Login</button>
+      <button mat-flat-button class="register-button">Register</button>
+    </div>
+    <div class="search-container">
+      <mat-form-field appearance="outline">
+        <span matPrefix>
+          <mat-icon>search</mat-icon>
+        </span>
+        <mat-label>Search</mat-label>
+        <input matInput>
+      </mat-form-field>
     </div>
     <div class="navigation-links-container">
-      <a routerLink="/home" routerLinkActive="active" (click)="opened = false">Home</a>
-      <a routerLink="/services" routerLinkActive="active" (click)="opened = false">Services</a>
-      <a routerLink="/about" routerLinkActive="active" (click)="opened = false">About Us</a>
-      <a routerLink="/partners" routerLinkActive="active" (click)="opened = false">Business Partners</a>
-      <a routerLink="/resources" routerLinkActive="active" (click)="opened = false">Free Resources</a>
-      <a routerLink="/connect" routerLinkActive="active" (click)="opened = false">Connect</a>
+      <a routerLink="/home" routerLinkActive="active" (click)="opened = false">Inicio</a>
+      <a routerLink="/about" routerLinkActive="active" (click)="opened = false">Nosotros</a>
+      <a routerLink="/info" routerLinkActive="active" (click)="opened = false">Descrubre</a>
+      <a routerLink="/faq" routerLinkActive="active" (click)="opened = false">FAQ</a>
+      <a routerLink="/blog" routerLinkActive="active" (click)="opened = false">Blog</a>
+      <a routerLink="/articles" routerLinkActive="active" (click)="opened = false">Noticias</a>
     </div>
   </mat-sidenav>
   <mat-sidenav-content>

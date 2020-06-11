@@ -1,11 +1,55 @@
 mat-sidenav-container {
   background-color: unset;
   mat-sidenav {
-    background-color: #c1877c;
+    background-color: black;
     display: flex;
     flex-direction: column;
     .logomark-container {
       padding: 20px;
+      display: flex;
+      justify-content: center;
+      img {
+        width: 68px;
+      }
+    }
+    .buttons-conatiner {
+      padding: 20px;
+      display: flex;
+      justify-content: space-evenly;
+      padding-bottom: 0px;
+      button {
+        flex-grow: 1;
+        line-height: 24px;
+      }
+      .login-button {
+        background-color: #b844a7;
+        margin-right: 20px;
+      }
+      .register-button {
+        background-color: #f78b0d;
+      }
+    }
+    .search-container {
+      color: white;
+      padding: 20px;
+      mat-form-field {
+      }
+      ::ng-deep {
+        mat-label {
+          color: white;
+        }
+        .mat-form-field-wrapper  {
+          width: 100%;
+          margin: 0px;
+          padding: 0px;
+          .mat-form-field-subscript-wrapper {
+            padding: 0px;
+            font-size: 0px;
+            margin: 0px;
+            display: none;
+          }
+        }
+      }
     }
     .navigation-links-container {
       display: flex;
@@ -23,8 +67,19 @@ mat-sidenav-container {
         font-family: 'Barlow', sans-serif;
         &.active {
           font-weight: bold;
-          background-color: #dfc0bb;
+          background-color: rgba(255, 255, 255, 0.15);
+          color: #f78b0d;
           outline: none;
+          &:before {
+            content: '';
+            position: absolute;
+            z-index: 1;
+            width: 3px;
+            height: 100%;
+            right: 0px;
+            background-color: #b844a7;
+            top: 0px;
+          }
         }
         &:hover {
           font-weight: bold;

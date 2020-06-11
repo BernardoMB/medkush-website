@@ -10,6 +10,7 @@ mat-sidenav-container {
       justify-content: center;
       img {
         width: 68px;
+        height: 72px;
       }
     }
     .buttons-conatiner {
@@ -98,3 +99,12 @@ mat-sidenav-container {
     min-height: calc(100vh - 70px - 293px);
   }
 }
+
+/* ::ng-deep .mat-form-field-underline, ::ng-deep .mat-form-field-ripple {
+  background-color: white !important;
+  color: white !important
+}
+
+::ng-deep .mat-form-field-empty.mat-form-field-label {
+    color: white;
+} */

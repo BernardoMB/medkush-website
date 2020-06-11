@@ -81,6 +81,7 @@
         justify-content: space-between;
         width: 100%;
         .buttons-conatiner {
+          min-width: 220px;
           button {
             margin-right: 10px;
             line-height: 24px;
@@ -110,6 +111,7 @@
           color: white;
           mat-form-field {
             margin-top: 6px;
+            width: 100%;
           }
           ::ng-deep {
             mat-label {
@@ -131,7 +133,7 @@
       }
     }
   }
-  @media screen and (max-width: 810px) {
+  @media screen and (max-width: 940px) {
     display: none;
   }
 }
@@ -147,9 +149,11 @@
   // Modified by me
   z-index: 9;
   width: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 2px 1px 0 rgba(20, 23, 28, 0.1);
+  display: flex;
+  align-items: center;
   .header-container {
-    background-color: rgba(0, 0, 0, 0.85);
-    box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 2px 1px 0 rgba(20, 23, 28, 0.1);
     color: white;
     //
     max-width: 1440px;
@@ -193,10 +197,11 @@
       align-items: center;
       .left {
         width: 100%;
+        margin-right: 20px;
         .search-container {
           color: white;
           mat-form-field {
-            margin-right: 20px;
+            width: 100%;
           }
           ::ng-deep {
             mat-label {
@@ -352,7 +357,7 @@
     }
   }
   display: none;
-  @media screen and (max-width: 810px) {
+  @media screen and (max-width: 940px) {
     display: flex;
   }
 }

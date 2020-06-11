@@ -1,0 +1,45 @@
+mat-sidenav-container {
+  background-color: unset;
+  mat-sidenav {
+    background-color: #c1877c;
+    display: flex;
+    flex-direction: column;
+    .logomark-container {
+      padding: 20px;
+    }
+    .navigation-links-container {
+      display: flex;
+      flex-direction: column;
+      a {
+        color: white;
+        outline: none;
+        text-decoration: none;
+        text-transform: uppercase;
+        position: relative;
+        padding: 10px 20px;
+        cursor: pointer;
+        letter-spacing: 2.535px;
+        font-size: 13px;
+        font-family: 'Barlow', sans-serif;
+        &.active {
+          font-weight: bold;
+          background-color: #dfc0bb;
+          outline: none;
+        }
+        &:hover {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  mat-sidenav-content {
+  }
+}
+
+.router-outlet-container {
+  // Substract header height and footer height
+  min-height: calc(100vh - 231px - 293px);
+  @media screen and (max-width: 800px) {
+    min-height: calc(100vh - 70px - 293px);
+  }
+}

@@ -50,4 +50,6 @@ https://nuleafnaturals.com/
 https://cbdfx.com/
 https://cbdamericanshaman.com/
 
+# Internazionalization
 
+To add translattion follow the following tutotrial: https://www.youtube.com/watch?v=KCC5-PKBg4M

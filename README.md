@@ -53,3 +53,18 @@ https://cbdamericanshaman.com/
 # Internazionalization
 
 To add translattion follow the following tutotrial: https://www.youtube.com/watch?v=KCC5-PKBg4M
+
+# Pending info 
+
+- Lista de los productos con, descripcion, precio, descuentos, precio al mayoreo, minimo de unicades para acceder al precio al mayoreo, gramaje/litraje, disponibilidad, procentaje de THC, procentaje de CBD, mas fotos del producto (si se pude), usos recomendados, instrucciones de uso, contraindicaciones, 
+- Terminos y condiciones
+- Aviso legal
+- Politica de privacidad 
+- Politica de devolucion
+- Direccion de contacto
+- Telefono de contacto
+- Email de contacto
+- Ligas a redes sociales (Instagram, Facebook, Twitter, Tinder, etc)
+- Marcas patrocinadoras o integradas a la cadena de valor de Medkush 
+- Video promocional si es que existe
+- Fotos y bio (dos parrafos) de los socios fundadores de Medkush

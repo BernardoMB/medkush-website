@@ -15,6 +15,7 @@ import { SWIPER_CONFIG } from 'ngx-swiper-wrapper';
 import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { ScrollingModule } from '@angular/cdk/scrolling';
+import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   /* direction: 'horizontal',
@@ -43,9 +44,10 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
       enableHtml: true,
       tapToDismiss: false
     }),
-    SwiperModule,
+    /* SwiperModule, // ngx-swiper-wrapper */
     NgxPaginationModule,
-    ScrollingModule
+    ScrollingModule,
+    NgxUsefulSwiperModule // ngx-useful-swiper
   ],
   providers: [
     {

@@ -59,7 +59,18 @@ export class LandingComponent implements OnInit {
       el: '.swiper-scrollbar',
       hide: true
     },
-    slidesPerView: 5,
+    slidesPerView: 1,
+    breakpoints: {
+      640: {
+        slidesPerView: 2
+      },
+      768: {
+        slidesPerView: 3
+      },
+      1024: {
+        slidesPerView: 4
+      }
+    },
     loop: true,
     speed: 800
   };

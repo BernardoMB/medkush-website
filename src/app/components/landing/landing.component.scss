@@ -43,6 +43,12 @@
         @media screen and (max-width: 768px) {
           height: 25px;
         }
+        @media screen and (max-width: 560px) {
+          height: 18px;
+        }
+        @media screen and (max-width: 425px) {
+          height: 16px;
+        }
       }
     }
   }
@@ -210,6 +216,8 @@
 
 .instagram-swiper {
   background-color: black;
+  margin-bottom: 40px;
+  position: relative;
   .instagram-swiper-container {
     max-width: 1440px;
     display: flex;
@@ -232,16 +240,39 @@
         background: linear-gradient(135deg,  rgba(0,0,0,0.33) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#54000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
         .instagram-username {
-          color: white;
           display: flex;
-          padding: 5px 10px;
+          align-items: center;
+          padding: 15px 20px;
+          color: white;
+          .username {
+            line-height: 1;
+            font-size: 18px;
+          }
+          img {
+            margin-left: 5px;
+            /* width: 15px;
+            height: 15px */;
+          }
         }
       }
     }
   }
   ::ng-deep {
     .swiper-pagination-2 {
-      bottom: 24px;
+      bottom: 0px;
+      position: relative;
+      padding: 10px;
+      background-color: #fafafa;
+    }
+    .swiper-pagination-bullet {
+      background: #e1e1e8;
+      opacity: 1;
+      width: 10px;
+      height: 10px;
+      margin: 0px 6px;
+    }
+    .swiper-pagination-bullet-active {
+      background: #aef16f;
     }
   }
 }

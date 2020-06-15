@@ -108,11 +108,26 @@
   <div class="instagram-swiper-container">
     <swiper [config]="config2">
       <div class="swiper-wrapper">
-        <div *ngFor="let item of [1,2,3,4,5,6,7,8,9,10]" class="swiper-slide" [style.backgroundImage]="'url(assets/img/instagram/01.jpg)'">
+        <div *ngFor="let item of [1]" class="swiper-slide" [style.backgroundImage]="'url(assets/img/instagram/01.jpg)'">
           <div class="slide-overlay">
             <div class="instagram-username">
-              <div class="username">Instagram_username</div>
-              <div class="verified"></div>
+              <div class="username">@Instagram_username</div>
+              <img src="assets/img/elements/instagram-verified.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div *ngFor="let item of [2,3,4,5]" class="swiper-slide" [style.backgroundImage]="'url(assets/img/instagram/01.jpg)'">
+          <div class="slide-overlay">
+            <div class="instagram-username">
+              <div class="username">@Instagram_username</div>
+            </div>
+          </div>
+        </div>
+        <div *ngFor="let item of [6,7,8,9,10]" class="swiper-slide" [style.backgroundImage]="'url(assets/img/instagram/01.jpg)'">
+          <div class="slide-overlay">
+            <div class="instagram-username">
+              <div class="username">@Instagram_username</div>
+              <img src="assets/img/elements/instagram-verified.png" alt="">
             </div>
           </div>
         </div>
@@ -125,5 +140,7 @@
       <!-- Add Scrollbar -->
       <!-- <div class="swiper-scrollbar"></div> -->
     </swiper>
+    <!-- Chingadera rara porque en pinche iOs aparece una linea que no deberia de aparecer -->
+    <div style="width: 100%; height: 2px; background-color: #fafafa; position: absolute; z-index: 1; bottom: -1px;"></div>
   </div>
 </section>

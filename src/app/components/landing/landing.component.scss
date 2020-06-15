@@ -38,10 +38,10 @@
       justify-content: center;
       flex-wrap: wrap;
       img {
-        height: 45px;
+        height: 30px;
         margin: 10px 15px;
         @media screen and (max-width: 768px) {
-          height: 30px;
+          height: 25px;
         }
       }
     }
@@ -81,6 +81,7 @@
         flex-direction: column;
         border: 10px;
         box-shadow: 0 0 30px 0 rgba(188, 230, 190, 0.5);
+        margin: 20px;
         .product-image {
           display: flex;
           justify-content: center;
@@ -92,6 +93,9 @@
           background-repeat: no-repeat;
           border-top-left-radius: 10px;
           border-top-right-radius: 10px;
+          @media screen and (max-width: 690px) {
+            width: unset;
+          }
         }
         .product-details {
           padding: 20px;
@@ -147,6 +151,9 @@
           }
         }
       }
+      @media screen and (max-width: 690px) {
+        flex-direction: column;
+      }
     }
   }
 }
@@ -199,6 +206,8 @@
   }
 }
 
+// Swiper customizations
+
 .instagram-swiper {
   background-color: black;
   .instagram-swiper-container {
@@ -234,5 +243,12 @@
     .swiper-pagination-2 {
       bottom: 24px;
     }
+  }
+}
+
+::ng-deep {
+  .swiper-button-next, .swiper-button-prev {
+    outline: none;
+    color: rgba(255, 255, 255, 0.5);
   }
 }

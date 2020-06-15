@@ -1,0 +1,90 @@
+.footer {
+  background: url('../../../assets/img/backgrounds/weed.png') black;
+  .footer-container {
+    max-width: 1440px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    .navigation {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .navigation-container {
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        &:nth-last-child(1) {
+          margin-right: 0px;
+        }
+        @media screen and (max-width: 520px) {
+          margin-right: 0px;
+          align-items: center;
+          text-align: center;
+        }
+      }
+      .logo-container {
+        img {
+          height: 160px;
+        }
+      }
+      .links {
+      }
+      .store-container {
+      }
+      .contact-container {
+      }
+      .social-container {
+        .social-links {
+          display: flex;
+          align-items: center;
+          font-size: 32px;
+          i {
+            cursor: pointer;
+            margin-right: 10px;
+            &:nth-last-child(1) {
+              margin-right: 0px;
+            }
+            &:hover {
+              color: #aef16f;
+            }
+          }
+        }
+      }
+      // Global
+      .footer-section-title {
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 10px;
+        font-family: "Barlow", sans-serif;
+      }
+      @media screen and (max-width: 520px) {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    .disclosure {
+      font-size: 12px;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid gainsboro;
+      margin-top: 30px;
+      background: repeating-linear-gradient(45deg,#3a3a3a,#3a3a3a 10px,#3e3e3e 10px,#3e3d3d 20px);
+    }
+    .terms-and-conditions {
+      text-align: center;
+      font-size: 12px;
+      padding: 20px;
+      a {
+        color: white;
+        &:hover {
+          color: #aef16f;
+        }
+      }
+    }
+  }
+}

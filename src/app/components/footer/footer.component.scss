@@ -3,7 +3,7 @@
   .footer-container {
     max-width: 1440px;
     margin: auto;
-    padding: 20px;
+    padding: 20px 40px;
     display: flex;
     flex-direction: column;
     color: white;
@@ -85,6 +85,9 @@
           color: #aef16f;
         }
       }
+    }
+    @media screen and (max-width: 768px) {
+      padding: 20px;
     }
   }
 }

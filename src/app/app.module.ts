@@ -16,6 +16,7 @@ import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { ScrollingModule } from '@angular/cdk/scrolling';
 import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
+import { ScrollToTopComponent } from './components/scroll-to-top/scroll-to-top.component';
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   /* direction: 'horizontal',
@@ -29,7 +30,8 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     FooterComponent,
     HeaderComponent,
     LandingComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    ScrollToTopComponent
   ],
   imports: [
     BrowserModule,

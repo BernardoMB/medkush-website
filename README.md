@@ -69,3 +69,18 @@ To add translattion follow the following tutotrial: https://www.youtube.com/watc
 - Marcas patrocinadoras o integradas a la cadena de valor de Medkush 
 - Video promocional si es que existe
 - Fotos y bio (dos parrafos) de los socios fundadores de Medkush
+
+# Incoporate the following element into the landing page
+- Mision Visison, mame
+- Que es el CBD
+- Productos fase
+- Arreglar que no se ve el logo bien
+- Primera fase enfocado a todo blog y a conocer la marca
+- Regulacion pendiente. Generar presion para que se emita la regulacion
+
+# TODO: List 
+- Armar confluence
+- Apoyarse con las diseñadoras
+- Post de Instagram es integrar API y queda para fase dos
+- Discutir manera de generar mas dinero a partir del desarrollo pero son jodidos entonces ragalias
+

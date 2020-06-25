@@ -49,14 +49,20 @@
           display: flex;
           align-items: center;
           font-size: 32px;
-          i {
-            cursor: pointer;
+          a {
             margin-right: 10px;
+            color: white;
             &:nth-last-child(1) {
               margin-right: 0px;
             }
-            &:hover {
-              color: #aef16f;
+            &:visited {
+              color: white;
+            }
+            i {
+              cursor: pointer;
+              &:hover {
+                color: #aef16f;
+              }
             }
           }
         }

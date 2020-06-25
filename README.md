@@ -51,36 +51,24 @@ https://nuleafnaturals.com/
 https://cbdfx.com/
 https://cbdamericanshaman.com/
 
-# Internazionalization
-
-To add translattion follow the following tutotrial: https://www.youtube.com/watch?v=KCC5-PKBg4M
-
 # Pending info 
 
-- Lista de los productos con, descripcion, precio, descuentos, precio al mayoreo, minimo de unicades para acceder al precio al mayoreo, gramaje/litraje, disponibilidad, procentaje de THC, procentaje de CBD, mas fotos del producto (si se pude), usos recomendados, instrucciones de uso, contraindicaciones, 
+- Mision
+- Vision
+- Valores
 - Terminos y condiciones
 - Aviso legal
 - Politica de privacidad 
 - Politica de devolucion
 - Direccion de contacto
-- Telefono de contacto
-- Email de contacto
+- Guia del comprador (Como son los envios, tiempos de entrega, rastreo de envios, como es la comunicacion con el comprador). 
 - Ligas a redes sociales (Instagram, Facebook, Twitter, Tinder, etc)
 - Marcas patrocinadoras o integradas a la cadena de valor de Medkush 
 - Video promocional si es que existe
 - Fotos y bio (dos parrafos) de los socios fundadores de Medkush
 
-# Incoporate the following element into the landing page
-- Mision Visison, mame
-- Que es el CBD
-- Productos fase
-- Arreglar que no se ve el logo bien
-- Primera fase enfocado a todo blog y a conocer la marca
-- Regulacion pendiente. Generar presion para que se emita la regulacion
+# Not pending info
 
-# TODO: List 
-- Armar confluence
-- Apoyarse con las diseñadoras
-- Post de Instagram es integrar API y queda para fase dos
-- Discutir manera de generar mas dinero a partir del desarrollo pero son jodidos entonces ragalias
-
+- Lista de los productos con, descripcion, precio, descuentos, precio al mayoreo, minimo de unicades para acceder al precio al mayoreo, gramaje/litraje, disponibilidad, procentaje de THC, procentaje de CBD, mas fotos del producto (si se pude), usos recomendados, instrucciones de uso, contraindicaciones.
+- Telefono de contacto
+- Email de contacto

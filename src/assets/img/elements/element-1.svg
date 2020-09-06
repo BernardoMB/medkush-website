@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="574px" height="731px" viewBox="0 0 574 731" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <desc>Created with Lunacy</desc>
+  <g id="Group" transform="translate(0.5 0.5)">
+    <path d="M56.0329 49.7854L55.9891 49.8632L0.0198448 50L0 49.9586L28.144 0L56.0329 49.7854L56.0329 49.7854Z" transform="translate(258.1516 680)" id="Path-Copy-6" fill="#741D61" fill-rule="evenodd" stroke="none" />
+    <path d="M200 0L400 354.212L-7.4607e-12 354.212L200 0Z" transform="matrix(-4.371139E-08 -1 1 -4.371139E-08 192.11523 400)" id="Triangle" fill="#93CA5C" fill-rule="evenodd" stroke="none" />
+    <path d="M158 0L316 280.168L-5.89395e-12 280.168L158 0Z" transform="matrix(-4.371139E-08 -1 1 -4.371139E-08 0 599)" id="Triangle-Copy" fill="none" fill-rule="evenodd" stroke="#979797" stroke-width="1" />
+    <path d="M158.071 0L316.142 280.083L-5.8966e-12 280.083L158.071 0Z" transform="matrix(-0.8660254 -0.50000006 0.50000006 -0.8660254 431.96558 678.5591)" id="Triangle-Copy-2" fill="none" fill-rule="evenodd" stroke="#5F5F5F" stroke-width="1" />
+  </g>
+</svg>

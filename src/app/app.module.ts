@@ -15,13 +15,12 @@ import { SWIPER_CONFIG } from 'ngx-swiper-wrapper';
 import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { ScrollingModule } from '@angular/cdk/scrolling';
-import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
 import { ScrollToTopComponent } from './components/scroll-to-top/scroll-to-top.component';
 import { ParticlesModule } from 'angular-particle';
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
-  /* direction: 'horizontal',
-  slidesPerView: 'auto' */
+  direction: 'horizontal',
+  slidesPerView: 'auto'
 };
 
 @NgModule({
@@ -50,7 +49,7 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     /* SwiperModule, // ngx-swiper-wrapper */
     NgxPaginationModule,
     ScrollingModule,
-    NgxUsefulSwiperModule, // ngx-useful-swiper
+    SwiperModule, // Ngx swiper wrapper
     ParticlesModule // For Using ParticleJS in Angular
   ],
   providers: [

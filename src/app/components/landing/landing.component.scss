@@ -28,12 +28,15 @@
       .t2 {
 
       }
+      @media screen and (max-width: 570px) {
+        text-align: center;
+      }
     }
   }
 }
 
 .pattern-divider {
-  height: 40px;
+  height: 30px;
   background: url('../../../assets/img/backgrounds/medkush-patter.jpg');
   background-size: cover;
   background-position: center -392px;
@@ -86,6 +89,352 @@
     }
   }
 }
+
+$develop-border-thickness: 0px;
+.about-section {
+  border: $develop-border-thickness solid red;
+  margin-top: 60px;
+  .about-container {
+    border: $develop-border-thickness solid blue;
+    position: relative;
+    max-width: 1440px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #545454;
+    .title {
+      width: 100%;
+      max-width: 900px;
+      font-size: 38px;
+      font-weight: 700;
+    }
+    .text {
+      border: $develop-border-thickness solid green;
+      padding: 50px 0px;
+      line-height: 1.5;
+      font-size: 24px;
+      max-width: 610px;
+      span {
+        font-weight: 700;
+      }
+    }
+    img {
+      border: $develop-border-thickness solid yellow;
+      position: absolute;
+      right: 0px;
+      height: 336px;
+      margin-right: -12px;
+      z-index: -1;
+      @media screen and (max-width: 1020px) {
+        height: 30vw;
+      }
+    }
+  }
+}
+
+.cbd-section {
+  border: $develop-border-thickness solid red;
+  margin-top: 120px;
+  .cbd-container {
+    border: $develop-border-thickness solid blue;
+    position: relative;
+    max-width: 1150px;
+    margin: auto;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #545454;
+    border: 3px solid gainsboro;
+    border-radius: 40px;
+    background-color: white;
+    .title {
+      color: #741d61;
+      width: 100%;
+      max-width: 900px;
+      font-size: 38px;
+      font-weight: 700;
+    }
+    .text {
+      border: $develop-border-thickness solid green;
+      padding: 50px 0px;
+      line-height: 1.5;
+      font-size: 24px;
+      max-width: 610px;
+      span {
+        font-weight: 700;
+      }
+    }
+    .e1 {
+      border: $develop-border-thickness solid yellow;
+      position: absolute;
+      height: 300px;
+      z-index: -1;
+      left: 60px;
+      top: -120px;
+      @media screen and (max-width: 768px) {
+        left: calc(50vw - 143.5px) !important;
+        height: 200px;
+        top: -86px !important;
+      }
+    }
+    .e2 {
+      border: $develop-border-thickness solid yellow;
+      position: absolute;
+      height: 300px;
+      z-index: -1;
+      left: -8px;
+      bottom: -60px;
+      @media screen and (max-width: 768px) {
+        left: calc(50vw - 148.5px) !important;
+        height: 150px;
+      }
+    }
+    .e3 {
+      border: $develop-border-thickness solid yellow;
+      position: absolute;
+      height: 200px;
+      z-index: 1;
+      left: 10px;
+      bottom: 30px;
+      @media screen and (max-width: 1260px) {
+        transform: rotate(90deg);
+        bottom: -49px;
+        right: 33px;
+        left: unset;
+      }
+    }
+    @media screen and (max-width: 1260px) {
+      margin: 0px 20px;
+    }
+    @media screen and (max-width: 768px) {
+      padding: 30px;
+    }
+  }
+}
+
+.benefits-section {
+  border: $develop-border-thickness solid red;
+  margin-top: 120px;
+  .benefits-container {
+    border: $develop-border-thickness solid blue;
+    position: relative;
+    max-width: 1440px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #545454;
+    .title {
+      width: 100%;
+      max-width: 900px;
+      font-size: 38px;
+      font-weight: 700;
+      color: #6bb139;
+      text-align: end;
+    }
+    .text {
+      border: $develop-border-thickness solid green;
+      padding: 50px 0px;
+      line-height: 1.5;
+      font-size: 24px;
+      max-width: 610px;
+      text-align: end;
+      span {
+        font-weight: 700;
+      }
+    }
+    .e1 {
+      border: $develop-border-thickness solid yellow;
+      position: absolute;
+      right: 0px;
+      height: 170px;
+      z-index: -1;
+      bottom: 0px;
+      @media screen and (max-width: 1040px) {
+        height: 16vw;
+        bottom: -50px;
+      }
+    }
+    .e2 {
+      border: $develop-border-thickness solid yellow;
+      position: absolute;
+      left: 0px;
+      // top: 30px;
+      height: 336px;
+      margin-left: -24px;
+      z-index: -1;
+      @media screen and (max-width: 1040px) {
+        height: 30vw;
+        top: 0px;
+      }
+    }
+  }
+}
+
+.testimonials-title {
+  border: $develop-border-thickness solid red;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  .testimonials-title-container {
+    border: $develop-border-thickness solid blue;
+    position: relative;
+    max-width: 1440px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    div {
+      color: #741d61;
+      width: 100%;
+      max-width: 900px;
+      font-size: 38px;
+      font-weight: 700;
+    }
+  }
+}
+.testimonials-section {
+  background-color: #F6F6F6;
+  margin-bottom: 60px;
+  .testimonials-container {
+    position: relative;
+    max-width: 1440px;
+    margin: auto;
+    padding: 20px;
+    .swiper-container {
+      width: 100%;
+    }
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .testimonial-conatiner {
+        margin-top: 30px;
+        max-width: 610px;
+        padding: 40px;
+        position: relative;
+        p {
+          color: #545454;
+          line-height: 1.5;
+          font-size: 24px;
+          span {
+            font-weight: 700;
+          }
+        }
+        .quote {
+          position: absolute;
+          line-height: 1;
+          font-size: 60px;
+          color: #ab7bb6;
+        }
+        .q1 {
+          top: 0px;
+          left: 0px;
+        }
+        .q2 {
+          bottom: 0px;
+          right:  0px;
+        }
+      }
+    }
+    ::ng-deep {
+      .swiper-pagination {
+        bottom: 0px;
+        position: relative;
+        padding: 10px;
+        background-color: #F6F6F6;
+      }
+      .swiper-pagination-bullet {
+        background: #e1e1e8;
+        opacity: 1;
+        width: 12px;
+        height: 12px;
+        margin: 0px 6px;
+      }
+      .swiper-pagination-bullet-active {
+        background: #ab7bb6;
+      }
+    }
+  }
+}
+
+.community-wrapper {
+  background-image: url('../../../assets/img/backgrounds/cannabis-3.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  .community {
+
+    // Old gradient
+
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/$auroraBlue+0$auroraRed+100&0.7+0,0.5+100 */
+    // background: -moz-linear-gradient(top,  rgba(53,168,129,0.7) 0%, rgba(22,96,71,0.5) 100%); /* FF3.6-15 */
+    // background: -webkit-linear-gradient(top,  rgba(53,168,129,0.7) 0%,rgba(22,96,71,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
+    // background: linear-gradient(to bottom,  rgba(53,168,129,0.7) 0%,rgba(22,96,71,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b$auroraBlue', endColorstr='#8$auroraRed',GradientType=0 ); /* IE6-9 */
+
+    // New gradient
+
+    $color1: rgba(0, 0, 0, 0.2);
+    $color2: rgba(107, 107, 107, 0.2);
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#037a74+0,052d42+100&0.5+0,0.7+100 */
+    background: -moz-linear-gradient(top,  $color1 0%,  $color2 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  $color1 0%, $color2 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  $color1 0%, $color2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80048787', endColorstr='#b3052d42',GradientType=0 ); /* IE6-9 */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    padding: 80px 60px;
+    text-align: center;
+    .title {
+      z-index: 1;
+      font-size: 30px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    .phrase {
+      margin-top: 10px;
+      z-index: 1;
+      max-width: 500px;
+      font-size: 20px;
+      font-weight: 500;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .more-button {
+      z-index: 1;
+      padding: 8px 30px;
+      border: 1px solid white;
+      font-weight: 600;
+      border-radius: 50px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .products {
   .products-container {

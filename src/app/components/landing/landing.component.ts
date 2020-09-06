@@ -10,7 +10,7 @@ import { SwiperOptions } from 'swiper';
   styleUrls: ['./landing.component.scss']
 })
 export class LandingComponent implements OnInit {
-  // ParticleJS configuration
+  //#region ParticleJS
   width = 100;
   height = 100;
   myStyle = {
@@ -231,87 +231,25 @@ export class LandingComponent implements OnInit {
     },
     "retina_detect": true
   };
+  //#endregion
 
-  // Swiper wrapper
+  //#region Testimonials swiper
   @ViewChildren(SwiperDirective) swiperDirective: QueryList<SwiperDirective>;
-  /* config: SwiperConfigInterface = {
+  config: SwiperConfigInterface = {
     slidesPerView: 1,
-    initialSlide: 0, // Slide Index Starting from 0
-    scrollbar: {
-      el: '.swiper-scrollbar',
-      hide: true,
-    },
     pagination: {
       el: '.swiper-pagination',
-      clickable: true
+      clickable: true,
     }
-  }; */
+  };
   index: number;
+  //#endregion
 
-  // Useful swiper
-  config: SwiperOptions = {
-    autoplay: {
-      delay: 5000, // Autoplay option having value in milliseconds (can be 0)
-      disableOnInteraction: true
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev'
-    },
-    scrollbar: {
-      el: '.swiper-scrollbar',
-      hide: true
-    },
-    spaceBetween: 30,
-    loop: true,
-    speed: 800
-  };
-  config2: SwiperOptions = {
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev'
-    },
-    scrollbar: {
-      el: '.swiper-scrollbar',
-      hide: true
-    },
-    slidesPerView: 1.2,
-    breakpoints: {
-      640: {
-        slidesPerView: 2
-      },
-      768: {
-        slidesPerView: 3
-      },
-      1024: {
-        slidesPerView: 4
-      }
-    },
-    loop: true,
-    speed: 800
-  };
+
 
   constructor() { }
 
   ngOnInit(): void {
-  }
-
-  nextSlide() {
-    console.log('Pene 1');
-    this.swiperDirective.first.nextSlide();
-  }
-
-  prevSlide() {
-    console.log('Pene 2');
-    this.swiperDirective.first.prevSlide();
   }
 
 }

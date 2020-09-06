@@ -23,7 +23,7 @@
         font-weight: 700;
       }
       .t1 {
-        color: #6bb139;
+        color: #93ca5c;
       }
       .t2 {
 
@@ -422,8 +422,8 @@ $develop-border-thickness: 0px;
 
     // New gradient
 
-    $color1: rgba(0, 0, 0, 0.2);
-    $color2: rgba(107, 107, 107, 0.2);
+    $color1: rgba(0, 0, 0, 0.4);
+    $color2: rgba(107, 107, 107, 0.4);
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#037a74+0,052d42+100&0.5+0,0.7+100 */
     background: -moz-linear-gradient(top,  $color1 0%,  $color2 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top,  $color1 0%, $color2 100%); /* Chrome10-25,Safari5.1-6 */
@@ -443,6 +443,7 @@ $develop-border-thickness: 0px;
       font-size: 30px;
       font-weight: 700;
       margin-bottom: 20px;
+      line-height: 1.2;
     }
     .phrase {
       margin-top: 10px;
@@ -452,6 +453,7 @@ $develop-border-thickness: 0px;
       font-weight: 500;
       text-align: center;
       margin-bottom: 40px;
+      line-height: 1.4;
     }
     .more-button {
       z-index: 1;

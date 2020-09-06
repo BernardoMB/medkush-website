@@ -31,7 +31,14 @@
       @media screen and (max-width: 570px) {
         text-align: center;
       }
+      @media screen and (max-width: 425px) {
+        font-size: 28px;
+        margin-top: 0px;
+      }
     }
+  }
+  @media screen and (max-width: 425px) {
+    height: 400px;
   }
 }
 
@@ -104,6 +111,7 @@ $develop-border-thickness: 0px;
     flex-direction: column;
     align-items: center;
     color: #545454;
+    overflow-x: hidden;
     .title {
       width: 100%;
       max-width: 900px;

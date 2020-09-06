@@ -33,12 +33,12 @@
       }
       @media screen and (max-width: 425px) {
         font-size: 28px;
-        margin-top: 0px;
+        margin-top: 80px;
       }
     }
-  }
-  @media screen and (max-width: 425px) {
-    height: 400px;
+    @media screen and (max-width: 425px) {
+      height: 300px;
+    }
   }
 }
 
@@ -117,6 +117,9 @@ $develop-border-thickness: 0px;
       max-width: 900px;
       font-size: 38px;
       font-weight: 700;
+      @media screen and (max-width: 425px) {
+        font-size: 28px;
+      }
     }
     .text {
       border: $develop-border-thickness solid green;
@@ -127,10 +130,15 @@ $develop-border-thickness: 0px;
       span {
         font-weight: 700;
       }
+      @media screen and (max-width: 425px) {
+        font-size: 14px;
+        padding-bottom: 0px;
+      }
     }
     img {
       border: $develop-border-thickness solid yellow;
       position: absolute;
+      top: 0px;
       right: 0px;
       height: 336px;
       margin-right: -12px;
@@ -164,6 +172,9 @@ $develop-border-thickness: 0px;
       max-width: 900px;
       font-size: 38px;
       font-weight: 700;
+      @media screen and (max-width: 425px) {
+        font-size: 28px;
+      }
     }
     .text {
       border: $develop-border-thickness solid green;
@@ -173,6 +184,10 @@ $develop-border-thickness: 0px;
       max-width: 610px;
       span {
         font-weight: 700;
+      }
+      @media screen and (max-width: 425px) {
+        font-size: 14px;
+        padding-top: 30px;
       }
     }
     .e1 {
@@ -185,7 +200,7 @@ $develop-border-thickness: 0px;
       @media screen and (max-width: 768px) {
         left: calc(50vw - 143.5px) !important;
         height: 200px;
-        top: -86px !important;
+        top: -50px !important;
       }
     }
     .e2 {
@@ -209,8 +224,9 @@ $develop-border-thickness: 0px;
       bottom: 30px;
       @media screen and (max-width: 1260px) {
         transform: rotate(90deg);
-        bottom: -49px;
+        bottom: -34px;
         right: 33px;
+        height: 150px;
         left: unset;
       }
     }
@@ -220,6 +236,9 @@ $develop-border-thickness: 0px;
     @media screen and (max-width: 768px) {
       padding: 30px;
     }
+  }
+  @media screen and (max-width: 425px) {
+    margin-top: 90px;
   }
 }
 
@@ -243,6 +262,9 @@ $develop-border-thickness: 0px;
       font-weight: 700;
       color: #6bb139;
       text-align: end;
+      @media screen and (max-width: 425px) {
+        font-size: 28px;
+      }
     }
     .text {
       border: $develop-border-thickness solid green;
@@ -254,6 +276,9 @@ $develop-border-thickness: 0px;
       span {
         font-weight: 700;
       }
+      @media screen and (max-width: 425px) {
+        font-size: 14px;
+      }
     }
     .e1 {
       border: $develop-border-thickness solid yellow;
@@ -264,7 +289,7 @@ $develop-border-thickness: 0px;
       bottom: 0px;
       @media screen and (max-width: 1040px) {
         height: 16vw;
-        bottom: -50px;
+        bottom: -10px;
       }
     }
     .e2 {
@@ -302,7 +327,14 @@ $develop-border-thickness: 0px;
       max-width: 900px;
       font-size: 38px;
       font-weight: 700;
+      @media screen and (max-width: 425px) {
+        font-size: 28px;
+      }
     }
+  }
+  @media screen and (max-width: 425px) {
+    margin-top: 10px;
+    margin-bottom: 0px;
   }
 }
 .testimonials-section {
@@ -312,7 +344,7 @@ $develop-border-thickness: 0px;
     position: relative;
     max-width: 1440px;
     margin: auto;
-    padding: 20px;
+    padding: 0px 20px;
     .swiper-container {
       width: 100%;
     }
@@ -331,6 +363,9 @@ $develop-border-thickness: 0px;
           font-size: 24px;
           span {
             font-weight: 700;
+          }
+          @media screen and (max-width: 425px) {
+            font-size: 14px;
           }
         }
         .quote {

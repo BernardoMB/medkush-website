@@ -12,7 +12,7 @@ export class ScrollToTopComponent implements OnInit {
 
   constructor(@Inject(DOCUMENT) private document: Document) { }
 
-  @HostListener('window:scroll', ['$event'])
+  @HostListener('window:scroll', [])
   checkScroll() {
     this.windowScrolled = window.pageYOffset >= 250;
   }

@@ -6,6 +6,39 @@
   }
 }
 
+.particles-section {
+  position: relative;
+  .particles-container {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .phrases {
+      font-size: 48px;
+      line-height: 1.25;
+      color: #545454;
+      margin-top: 65px;
+      padding: 40px;
+      span {
+        font-weight: 700;
+      }
+      .t1 {
+        color: #6bb139;
+      }
+      .t2 {
+
+      }
+    }
+  }
+}
+
+.pattern-divider {
+  height: 40px;
+  background: url('../../../assets/img/backgrounds/medkush-patter.jpg');
+  background-size: cover;
+  background-position: center -392px;
+}
+
 .as-seen-on {
   background-color: gainsboro;
   .as-seen-on-container {

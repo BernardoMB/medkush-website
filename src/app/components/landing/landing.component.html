@@ -1,4 +1,4 @@
-<section class="jumbotron">
+<!-- <section class="jumbotron">
   <swiper [config]="config">
     <div class="swiper-wrapper">
       <div class="swiper-slide slide-1">Slide 1</div>
@@ -12,15 +12,32 @@
       <div class="swiper-slide slide-1">Slide 9</div>
       <div class="swiper-slide slide-1">Slide 10</div>
     </div>
-    <!-- Add Pagination -->
+    Add Pagination
     <div class="swiper-pagination swiper-pagination-white"></div>
-    <!-- Add Arrows -->
+    Add Arrows
     <div class="swiper-button-next swiper-button-white"></div>
     <div class="swiper-button-prev swiper-button-white"></div>
-    <!-- Add Scrollbar -->
-    <!-- <div class="swiper-scrollbar"></div> -->
+    Add Scrollbar (this goes commented)
+    <div class="swiper-scrollbar"></div>
   </swiper>
+</section> -->
+
+<section class="particles-section">
+  <particles  id="particles"  [params]="myParams" [style]="myStyle" [width]="width" [height]="height"></particles>
+  <particles  id="particles2"  [params]="myParams2" [style]="myStyle" [width]="width" [height]="height"></particles>
+  <div class="particles-container">
+    <div class="phrases">
+      <div class="phrase">
+        Una alternativa <span class="t1">natural</span>
+      </div>
+      <div class="phrase">
+        a los remedios <span class="t2">cotidianos.</span>
+      </div>
+    </div>
+  </div>
 </section>
+
+<section class="pattern-divider"></section>
 
 <section class="as-seen-on">
   <div class="as-seen-on-container">

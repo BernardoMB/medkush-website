@@ -5,6 +5,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatButtonModule } from '@angular/material/button';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 @NgModule({
   // Add material components the application uses
@@ -14,7 +15,8 @@ import { MatButtonModule } from '@angular/material/button';
     MatFormFieldModule,
     MatInputModule,
     MatBadgeModule,
-    MatButtonModule
+    MatButtonModule,
+    MatGridListModule
   ],
   exports: [
     MatSidenavModule,
@@ -22,7 +24,8 @@ import { MatButtonModule } from '@angular/material/button';
     MatFormFieldModule,
     MatInputModule,
     MatBadgeModule,
-    MatButtonModule
-  ],
+    MatButtonModule,
+    MatGridListModule
+  ]
 })
 export class MaterialModule {}

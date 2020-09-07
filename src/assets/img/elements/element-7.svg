@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="313px" height="429px" viewBox="0 0 313 429" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <desc>Created with Lunacy</desc>
+  <g id="Group-6" transform="translate(0.5 0.5)">
+    <path d="M33.9885 29.8147L0.0212354 30L-7.19416e-14 29.9609L17.1581 0L34 29.7947L33.9885 29.8147Z" transform="matrix(1.1924881E-08 1 -1 1.1924881E-08 204.5 0)" id="Path-Copy-15" fill="#ADD1D7" fill-rule="evenodd" stroke="none" />
+    <path d="M150.056 0L305 266L-6.77236e-14 266L150.056 0Z" transform="matrix(1.1924881E-08 1 -1 1.1924881E-08 266 122.5)" id="Triangle-Copy-4" fill="none" fill-rule="evenodd" stroke="#979797" stroke-width="1" />
+    <path d="M73.9354 2.634e-13L150.166 131.742L-7.12717e-13 131.805L73.9354 2.634e-13Z" transform="matrix(-0.8660254 0.49999997 -0.49999997 -0.8660254 234.78142 169.61948)" id="Triangle-Copy-5" fill="none" fill-rule="evenodd" stroke="#979797" stroke-width="1" />
+    <path d="M73.9354 -1.43407e-12L150.166 131.742L-2.08397e-15 131.805L73.9354 -1.43407e-12Z" transform="matrix(0.8660254 -0.5 0.5 0.8660254 115.96051 91.99306)" id="Triangle-Copy-6" fill="none" fill-rule="evenodd" stroke="#979797" stroke-width="1" />
+  </g>
+</svg>

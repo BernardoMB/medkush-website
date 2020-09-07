@@ -245,7 +245,33 @@ export class LandingComponent implements OnInit {
   index: number;
   //#endregion
 
-
+  articles = [
+    {
+      title: 'Lorem Ipsum',
+      description: 'Donec dignissim enim quis augue euismod pellentesque.',
+      imgUrl: '../../../../assets/img/articles-delete/article-1.jpeg'
+    },
+    {
+      title: 'Lorem Ipsum',
+      description: 'Donec dignissim enim quis augue euismod pellentesque.',
+      imgUrl: '../../../../assets/img/articles-delete/article-2.jpeg'
+    },
+    {
+      title: 'Lorem Ipsum',
+      description: 'Donec dignissim enim quis augue euismod pellentesque.',
+      imgUrl: '../../../../assets/img/articles-delete/article-3.jpeg'
+    },
+    {
+      title: 'Lorem Ipsum',
+      description: 'Donec dignissim enim quis augue euismod pellentesque.',
+      imgUrl: '../../../../assets/img/articles-delete/article-4.jpeg'
+    },
+    {
+      title: 'Lorem Ipsum',
+      description: 'Donec dignissim enim quis augue euismod pellentesque.',
+      imgUrl: '../../../../assets/img/articles-delete/article-5.jpeg'
+    }
+  ];
 
   constructor() { }
 

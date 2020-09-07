@@ -308,105 +308,107 @@ $develop-border-thickness: 0px;
   }
 }
 
-.testimonials-title {
-  border: $develop-border-thickness solid red;
-  margin-top: 60px;
-  margin-bottom: 20px;
-  .testimonials-title-container {
-    border: $develop-border-thickness solid blue;
-    position: relative;
-    max-width: 1440px;
-    margin: auto;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    div {
-      color: #741d61;
-      width: 100%;
-      max-width: 900px;
-      font-size: 38px;
-      font-weight: 700;
-      @media screen and (max-width: 425px) {
-        font-size: 28px;
-      }
-    }
-  }
-  @media screen and (max-width: 425px) {
-    margin-top: 10px;
-    margin-bottom: 0px;
-  }
-}
 .testimonials-section {
-  background-color: #F6F6F6;
-  margin-bottom: 60px;
-  .testimonials-container {
-    position: relative;
-    max-width: 1440px;
-    margin: auto;
-    padding: 0px 20px;
-    .swiper-container {
-      width: 100%;
-    }
-    .swiper-slide {
+  .testimonials-title {
+    border: $develop-border-thickness solid red;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    .testimonials-title-container {
+      border: $develop-border-thickness solid blue;
+      position: relative;
+      max-width: 1440px;
+      margin: auto;
+      padding: 20px;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
-      .testimonial-conatiner {
-        margin-top: 30px;
-        max-width: 610px;
-        padding: 40px;
-        position: relative;
-        p {
-          color: #545454;
-          line-height: 1.5;
-          font-size: 24px;
-          span {
-            font-weight: 700;
-          }
-          @media screen and (max-width: 425px) {
-            font-size: 14px;
-          }
-        }
-        .quote {
-          position: absolute;
-          line-height: 1;
-          font-size: 60px;
-          color: #ab7bb6;
-        }
-        .q1 {
-          top: 0px;
-          left: 0px;
-        }
-        .q2 {
-          bottom: 0px;
-          right:  0px;
+      div {
+        color: #741d61;
+        width: 100%;
+        max-width: 900px;
+        font-size: 38px;
+        font-weight: 700;
+        @media screen and (max-width: 425px) {
+          font-size: 28px;
         }
       }
     }
-    ::ng-deep {
-      .swiper-pagination {
-        bottom: 0px;
-        position: relative;
-        padding: 10px;
-        background-color: #F6F6F6;
+    @media screen and (max-width: 425px) {
+      margin-top: 10px;
+      margin-bottom: 0px;
+    }
+  }
+  .testimonials-section {
+    background-color: #F6F6F6;
+    margin-bottom: 60px;
+    .testimonials-container {
+      position: relative;
+      max-width: 1440px;
+      margin: auto;
+      padding: 0px 20px;
+      .swiper-container {
+        width: 100%;
       }
-      .swiper-pagination-bullet {
-        background: #e1e1e8;
-        opacity: 1;
-        width: 12px;
-        height: 12px;
-        margin: 0px 6px;
+      .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .testimonial-conatiner {
+          margin-top: 30px;
+          max-width: 610px;
+          padding: 40px;
+          position: relative;
+          p {
+            color: #545454;
+            line-height: 1.5;
+            font-size: 24px;
+            span {
+              font-weight: 700;
+            }
+            @media screen and (max-width: 425px) {
+              font-size: 14px;
+            }
+          }
+          .quote {
+            position: absolute;
+            line-height: 1;
+            font-size: 60px;
+            color: #ab7bb6;
+          }
+          .q1 {
+            top: 0px;
+            left: 0px;
+          }
+          .q2 {
+            bottom: 0px;
+            right:  0px;
+          }
+        }
       }
-      .swiper-pagination-bullet-active {
-        background: #ab7bb6;
+      ::ng-deep {
+        .swiper-pagination {
+          bottom: 0px;
+          position: relative;
+          padding: 10px;
+          background-color: #F6F6F6;
+        }
+        .swiper-pagination-bullet {
+          background: #e1e1e8;
+          opacity: 1;
+          width: 12px;
+          height: 12px;
+          margin: 0px 6px;
+        }
+        .swiper-pagination-bullet-active {
+          background: #ab7bb6;
+        }
       }
     }
   }
 }
 
 .community-wrapper {
-  background-image: url('../../../assets/img/backgrounds/cannabis-3.jpg');
+  background-image: url('../../../assets/img/backgrounds/cannabis-3-medium.jpg');
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -461,6 +463,25 @@ $develop-border-thickness: 0px;
       border: 1px solid white;
       font-weight: 600;
       border-radius: 50px;
+    }
+    a {
+      border-radius: 2rem;
+      padding: 2px 8px;
+      flex-grow: 1;
+      text-align: center;
+      color: #545454;
+      margin-right: 10px;
+      line-height: 24px;
+      border: solid 2px transparent;
+      background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #8dcb5c, #b2489b);
+      background-origin: border-box;
+      background-clip: content-box, border-box;
+      box-shadow: 2px 1000px 1px white inset;
+      cursor: pointer;
+      &:hover {
+        box-shadow: none;
+        color: white;
+      }
     }
   }
 }

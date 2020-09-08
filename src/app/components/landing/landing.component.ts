@@ -335,6 +335,41 @@ export class LandingComponent implements OnInit {
   index2: number;
   //#endregion
 
+  //#region Products
+  products = [
+    {
+      name: 'Aceite CBD',
+      grammage: '150 ml',
+      price: 960,
+      discount: 0.2,
+      imgUrl: '../../../../assets/img/products-delete/gotas-new.png'
+    },
+    {
+      name: 'Bálsamo CBD',
+      grammage: '150 ml',
+      price: 960,
+      discount: 0.2,
+      imgUrl: '../../../../assets/img/products-delete/balsamo.png'
+    },
+  ];
+  @ViewChildren(SwiperDirective) swiperDirective3: QueryList<SwiperDirective>;
+  config3: SwiperConfigInterface = {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    breakpoints: {
+      630: {
+        slidesPerView: 2,
+        spaceBetween: 0,
+      }
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    }
+  };
+  index3: number;
+  //#endregion
+
   constructor() { }
 
   ngOnInit(): void {

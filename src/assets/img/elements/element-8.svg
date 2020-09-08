@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="388px" height="460px" viewBox="0 0 388 460" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <desc>Created with Lunacy</desc>
+  <g id="Group" transform="matrix(-1 8.742278E-08 -8.742278E-08 -1 387.27267 458.72266)">
+    <path d="M135 -6.63358e-14L270 239L0 239L135 -6.63358e-14Z" transform="matrix(-4.371138E-08 -1 1 -4.371138E-08 129.5 270)" id="Triangle" fill="#741D61" fill-rule="evenodd" stroke="none" />
+    <path d="M107 0L214 190L0 190L107 0Z" transform="matrix(-4.371138E-08 -1 1 -4.371138E-08 0 404.5)" id="Triangle-Copy" fill="none" fill-rule="evenodd" stroke="#979797" stroke-width="1" />
+    <path d="M106.946 4.41483e-13L213.751 189.279L4.50892e-13 189.359L106.946 4.41483e-13Z" transform="matrix(-0.8660254 -0.50000006 0.50000006 -0.8660254 292.09338 458.22266)" id="Triangle-Copy-2" fill="none" fill-rule="evenodd" stroke="#5F5F5F" stroke-width="1" />
+  </g>
+</svg>

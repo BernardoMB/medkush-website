@@ -464,7 +464,7 @@ $develop-border-thickness: 0px;
       font-weight: 600;
       border-radius: 50px;
     }
-    a {
+    .special-button {
       border-radius: 2rem;
       padding: 6px 20px;
       flex-grow: 1;
@@ -484,6 +484,9 @@ $develop-border-thickness: 0px;
         box-shadow: none;
         color: white;
       }
+    }
+    @media screen and (max-width: 425px) {
+      padding: 60spx 60px;
     }
   }
 }
@@ -698,149 +701,272 @@ $develop-border-thickness: 0px;
             }
           }
         }
-            ::ng-deep {
-              .swiper-pagination {
-                bottom: 0px;
-                position: relative;
-                padding: 10px;
-                background-color: #F6F6F6;
-              }
-              .swiper-pagination-bullet {
-                background: #e1e1e8;
-                opacity: 1;
-                width: 12px;
-                height: 12px;
-                margin: 0px 6px;
-              }
-              .swiper-pagination-bullet-active {
-                background: #ab7bb6;
-              }
-            }
+        ::ng-deep {
+          .swiper-pagination {
+            bottom: 0px;
+            position: relative;
+            padding: 10px;
+            background-color: #F6F6F6;
+          }
+          .swiper-pagination-bullet {
+            background: #e1e1e8;
+            opacity: 1;
+            width: 12px;
+            height: 12px;
+            margin: 0px 6px;
+          }
+          .swiper-pagination-bullet-active {
+            background: #ab7bb6;
+          }
+        }
       }
     }
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.products {
-  .products-container {
-    max-width: 1440px;
-    margin: auto;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    .label {
-      text-align: center;
-      color: black;
-      font-weight: bold;
-      font-size: 16px;
-    }
-    .line-container {
+.products-section {
+  .products-title {
+    border: $develop-border-thickness solid red;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    .products-title-container {
+      border: $develop-border-thickness solid blue;
+      position: relative;
+      max-width: 1440px;
+      margin: auto;
+      padding: 20px;
       display: flex;
-      justify-content: center;
-      margin-top: 20px;
-      margin-bottom: 10px;
-      .line {
-        width: 50px;
-        height: 5px;
-        border-radius: 5px;
-        background-color: #aef16f;
+      flex-direction: column;
+      align-items: center;
+      div {
+        color: #545454;
+        width: 100%;
+        max-width: 900px;
+        text-align: center;
+        font-size: 38px;
+        font-weight: 700;
+        font-size: 38px;
+        font-weight: 700;
+        @media screen and (max-width: 425px) {
+          font-size: 28px;
+        }
+      }
+      .e1 {
+        border: $develop-border-thickness solid yellow;
+        position: absolute;
+        left: 0px;
+        top: -58px;
+        height: 310px;
+        z-index: -1;
+        margin-left: -13px;
+        //transform: rotate(180deg);
+        @media screen and (max-width: 1420px) {
+          height: 20vw;
+        }
+        @media screen and (max-width: 940px) {
+          top: -50px;
+        }
+        @media screen and (max-width: 425px) {
+          height: 20vw;
+          top: -30px;
+        }
       }
     }
-    .products-cards {
-      display: flex;
-      justify-content: space-around;
-      .product-card {
-        display: flex;
-        flex-direction: column;
-        border: 10px;
-        box-shadow: 0 0 30px 0 rgba(188, 230, 190, 0.5);
-        margin: 20px;
-        .product-image {
-          display: flex;
-          justify-content: center;
-          height: 250px;
-          width: 250px;
-          background-size: contain;
-          background-position-x: center;
-          background-position-y: center;
-          background-repeat: no-repeat;
-          border-top-left-radius: 10px;
-          border-top-right-radius: 10px;
-          @media screen and (max-width: 690px) {
-            width: unset;
-          }
-        }
-        .product-details {
-          padding: 20px;
-          border-bottom-left-radius: 10px;
-          border-bottom-right-radius: 10px;
-          display: flex;
-          flex-direction: column;
-          .product-name {
-            font-weight: bold;
-            text-align: center;
-          }
-          .product-description {
-            color: gray;
-            font-size: 12px;
-            text-align: center;
-          }
-          .product-prices {
+    @media screen and (max-width: 425px) {
+      margin-top: 10px;
+      margin-bottom: 0px;
+    }
+  }
+  .products-section {
+    //background-color: #F6F6F6;
+    margin-bottom: 60px;
+    position: relative;
+    overflow-x: hidden;
+    .products-container {
+      position: relative;
+      max-width: 942px;
+      margin: auto;
+      padding: 20px;
+      .swiper-container {
+        width: 100%;
+        .swiper-wrapper {
+          // margin: 20px 0px;
+          .swiper-slide {
             display: flex;
             justify-content: center;
-            .product-retail-price {
-              color: gray;
-              margin-right: 10px;
-              text-decoration: line-through;
-            }
-            .product-final-price {
-              font-size: 16px;
-              font-weight: bold;
-              align-items: baseline;
-            }
-          }
-          .product-rating {}
-          .button-container {
-            display: flex;
-            justify-content: center;
-            margin: 20px;
-            .mat-flat-button {
-              background-color: #aef16f;
-              border-radius: 50px;
-              border: 1px solid #aef16f;
-              box-shadow: 0 0 30px 0 rgba(188, 230, 190, 0.5);
-              &:hover {
+            align-items: center;
+            .product-slide {
+              padding: 30px;
+              width: 100%;
+              .product-container {
                 background-color: white;
-                color: #aef16f;
+                position: relative;
+                border-radius: 35px;
+                box-shadow: 0px 0px 30px -18px rgba(0, 0, 0, 0.75);
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .product-image {
+                  width: 100%;
+                  height: 320px;
+                  background-position-x: center;
+                  background-position-y: center;
+                  background-size: contain;
+                  background-repeat: no-repeat;
+                  @media screen and (max-width: 630px) {
+                    height: 200px;
+                  }
+                }
+                .name {
+                  margin-top: 10px;
+                  font-size: 30px;
+                  font-weight: 600;
+                  text-align: center;
+                  line-height: 1;
+                }
+                .grammage {
+                  margin-top: 10px;
+                  color: #545454;
+                  font-size: 18px;
+                  text-align: center;
+                }
+                .price {
+                  margin-top: 20px;
+                  color: #545454;
+                  font-size: 22px;
+                  font-weight: 500;
+                  text-decoration: line-through;
+                  text-align: center;
+                }
+                .final-price {
+                  margin-top: 10px;
+                  color: #69963C;
+                  font-size: 30px;
+                  font-weight: 700;
+                  margin-bottom: 30px;
+                  text-align: center;
+                }
+                .action-button {
+                  border-radius: 2rem;
+                  padding: 6px 20px;
+                  flex-grow: 1;
+                  text-align: center;
+                  font-size: 1rem;
+                  font-weight: 500;
+                  margin-right: 10px;
+                  line-height: 24px;
+                  border: solid 2px transparent;
+                  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #f68b22, #94217d);
+                  background-origin: border-box;
+                  background-clip: content-box, border-box;
+                  color: white;
+                  cursor: pointer;
+                  margin-bottom: 25px;
+                  box-shadow: none;
+                  &:hover {
+                    box-shadow: 2px 1000px 1px white inset;
+                    color: #545454;
+                  }
+                }
+              }
+              @media screen and (max-width: 630px) {
+                padding: 20px;
               }
             }
           }
-          .product-link {
-            text-align: center;
-            text-decoration: underline;
-            &:hover {
-              color: #6bb139;
-            }
+        }
+        ::ng-deep {
+          .swiper-pagination {
+            bottom: 0px;
+            position: relative;
+            padding: 10px;
+            //background-color: #F6F6F6;
+          }
+          .swiper-pagination-bullet {
+            background: #e1e1e8;
+            opacity: 1;
+            width: 12px;
+            height: 12px;
+            margin: 0px 6px;
+          }
+          .swiper-pagination-bullet-active {
+            background: #aef16f;
           }
         }
       }
-      @media screen and (max-width: 690px) {
-        flex-direction: column;
+      .e2 {
+        border: $develop-border-thickness solid yellow;
+        position: absolute;
+        right: -150px;
+        height: 170px;
+        z-index: -1;
+        top: 300px;
+        //margin-right: -46px;
+        @media screen and (max-width: 1040px) {
+          height: 16vw;
+          bottom: -10px;
+        }
       }
+      @media screen and (max-width: 630px) {
+        padding: 10px;
+      }
+    }
+  }
+}
+
+.community-wrapper-2 {
+  background-image: url('../../../assets/img/backgrounds/cannabis-2.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  .community {
+
+    // Old gradient
+
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/$auroraBlue+0$auroraRed+100&0.7+0,0.5+100 */
+    // background: -moz-linear-gradient(top,  rgba(53,168,129,0.7) 0%, rgba(22,96,71,0.5) 100%); /* FF3.6-15 */
+    // background: -webkit-linear-gradient(top,  rgba(53,168,129,0.7) 0%,rgba(22,96,71,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
+    // background: linear-gradient(to bottom,  rgba(53,168,129,0.7) 0%,rgba(22,96,71,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b$auroraBlue', endColorstr='#8$auroraRed',GradientType=0 ); /* IE6-9 */
+
+    // New gradient
+
+    $color1: rgba(0, 0, 0, 0.4);
+    $color2: rgba(0, 0, 0, 0.4);
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#037a74+0,052d42+100&0.5+0,0.7+100 */
+    background: -moz-linear-gradient(top,  $color1 0%,  $color2 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  $color1 0%, $color2 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  $color1 0%, $color2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80048787', endColorstr='#b3052d42',GradientType=0 ); /* IE6-9 */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    padding: 120px 60px;
+    text-align: center;
+    .title {
+      z-index: 1;
+      font-size: 30px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+    .phrase {
+      margin-top: 10px;
+      z-index: 1;
+      max-width: 500px;
+      font-size: 20px;
+      font-weight: 500;
+      text-align: center;
+      margin-bottom: 40px;
+      line-height: 1.4;
+    }
+    @media screen and (max-width: 425px) {
+      padding: 60px 60px;
     }
   }
 }
@@ -890,78 +1016,5 @@ $develop-border-thickness: 0px;
         }
       }
     }
-  }
-}
-
-// Swiper customizations
-
-.instagram-swiper {
-  background-color: #fafafa;
-  margin-bottom: 40px;
-  position: relative;
-  overflow: hidden;
-  .instagram-swiper-container {
-    max-width: 1440px;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    .swiper-slide {
-      height: 300px;
-      background-size: cover;
-      resize: both;
-      background-position-x: center;
-      background-position-y: center;
-      .slide-overlay {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+0,000000+100&0.33+0,0+100 */
-        background: -moz-linear-gradient(-45deg,  rgba(0,0,0,0.33) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(-45deg,  rgba(0,0,0,0.33) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(135deg,  rgba(0,0,0,0.33) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#54000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-        .instagram-username {
-          display: flex;
-          align-items: center;
-          padding: 15px 20px;
-          color: white;
-          .username {
-            line-height: 1;
-            font-size: 18px;
-          }
-          img {
-            margin-left: 5px;
-            /* width: 15px;
-            height: 15px */;
-          }
-        }
-      }
-    }
-  }
-  ::ng-deep {
-    .swiper-pagination-2 {
-      bottom: 0px;
-      position: relative;
-      padding: 10px;
-      background-color: #fafafa;
-    }
-    .swiper-pagination-bullet {
-      background: #e1e1e8;
-      opacity: 1;
-      width: 10px;
-      height: 10px;
-      margin: 0px 6px;
-    }
-    .swiper-pagination-bullet-active {
-      background: #aef16f;
-    }
-  }
-}
-
-::ng-deep {
-  .swiper-button-next, .swiper-button-prev {
-    outline: none;
-    color: rgba(255, 255, 255, 0.5);
   }
 }

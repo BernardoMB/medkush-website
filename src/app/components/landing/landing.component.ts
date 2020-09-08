@@ -245,6 +245,7 @@ export class LandingComponent implements OnInit {
   index: number;
   //#endregion
 
+  //#region Articles
   articles = [
     {
       title: 'Lorem Ipsum',
@@ -272,6 +273,57 @@ export class LandingComponent implements OnInit {
       imgUrl: '../../../../assets/img/articles-delete/article-5.jpeg'
     }
   ];
+  //#endregion
+
+  //#region Blog
+  posts = [
+    {
+      views: 140,
+      comments: 70,
+      imgUrl: '../../../../assets/img/posts-delete/post-1.jpg'
+    },
+    {
+      views: 207,
+      comments: 32,
+      imgUrl: '../../../../assets/img/posts-delete/post-2.jpg'
+    },
+    {
+      views: 58,
+      comments: 9,
+      imgUrl: '../../../../assets/img/posts-delete/post-3.jpg'
+    },
+    {
+      views: 140,
+      comments: 70,
+      imgUrl: '../../../../assets/img/posts-delete/post-1.jpg'
+    },
+    {
+      views: 207,
+      comments: 32,
+      imgUrl: '../../../../assets/img/posts-delete/post-2.jpg'
+    },
+    {
+      views: 58,
+      comments: 9,
+      imgUrl: '../../../../assets/img/posts-delete/post-3.jpg'
+    },
+    {
+      views: 140,
+      comments: 70,
+      imgUrl: '../../../../assets/img/posts-delete/post-1.jpg'
+    }
+  ];
+  @ViewChildren(SwiperDirective) swiperDirective2: QueryList<SwiperDirective>;
+  config2: SwiperConfigInterface = {
+    slidesPerView: 3,
+    spaceBetween: 0,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    }
+  };
+  index2: number;
+  //#endregion
 
   constructor() { }
 

@@ -185,10 +185,6 @@ a nivel internacional apoyados de nuestros socios comerciales Riverleaf Biotech 
   </div>
 </section>
 
-
-
-
-
 <section class="news-section">
   <div class="news-container">
     <!-- <div style="width: 50px; height: 50px; background-color: red;"></div> -->
@@ -231,6 +227,41 @@ a nivel internacional apoyados de nuestros socios comerciales Riverleaf Biotech 
     </div>
     <img class="e1" src="../../../assets/img/elements/element-7.svg" alt="" srcset="">
     <!-- <img class="e1" src="../../../assets/img/elements/element-5.svg" alt="" srcset=""> -->
+  </div>
+</section>
+
+<section class="blog-section">
+  <div class="blog-title">
+    <div class="blog-title-container">
+      <div>Publicaciones</div>
+    </div>
+  </div>
+  <div class="blog-section">
+    <div class="blog-container">
+      <div class="swiper-container" [swiper]="config2" [(index)]="index2">
+        <div class="swiper-wrapper">
+          <div *ngFor="let post of posts; let i = index" class="swiper-slide">
+            <div class="post-conatiner">
+              <div class="post" [style.backgroundImage]="'url(' + posts[i].imgUrl + ')'">
+                <div class="post-overlay">
+                  <div class="post-details">
+                    <div class="post-detail">
+                      <mat-icon>person</mat-icon>
+                      <div class="detail">{{post.views}}</div>
+                    </div>
+                    <div class="post-detail">
+                      <mat-icon>person</mat-icon>
+                      <div class="detail">{{post.comments}}</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
   </div>
 </section>
 

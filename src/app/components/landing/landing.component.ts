@@ -315,8 +315,18 @@ export class LandingComponent implements OnInit {
   ];
   @ViewChildren(SwiperDirective) swiperDirective2: QueryList<SwiperDirective>;
   config2: SwiperConfigInterface = {
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 0,
+    breakpoints: {
+      500: {
+        slidesPerView: 2,
+        spaceBetween: 0,
+      },
+      700: {
+        slidesPerView: 3,
+        spaceBetween: 0,
+      },
+    },
     pagination: {
       el: '.swiper-pagination',
       clickable: true,

@@ -210,6 +210,12 @@
     margin: auto;
     display: flex;
     justify-content: space-between;
+
+    /* font-family: 'Nunito', sans-serif;
+    color: #545454;
+    background-color: white;
+    align-items: center;
+    box-shadow: 0 0 1px 1px rgba(20,23,28,.1), 0 2px 1px 0 rgba(20,23,28,.1); */
     .logo-container{
       img {
         height: 28px;
@@ -333,7 +339,7 @@
       }
     }
   }
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 986px) {
     display: none;
   }
 }
@@ -385,7 +391,7 @@
     }
   }
   display: none;
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 986px) {
     display: flex;
   }
 }

@@ -142,12 +142,3 @@ mat-sidenav-container {
     color: white;
 } */
 
-.no-scroll {
-  /* background-color: red;
-  :host {
-    background-color: blue;
-  } */
-  ::ng-deep .super-body {
-    background-color: red;
-  }
-}

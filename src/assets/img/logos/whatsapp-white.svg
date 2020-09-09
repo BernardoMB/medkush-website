@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="whatsapp-white.svg"
+   id="svg10"
+   version="1.1"
+   viewBox="0 0 35 35"
+   height="35px"
+   width="35px">
+  <metadata
+     id="metadata16">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs14" />
+  <sodipodi:namedview
+     inkscape:current-layer="whatsapp-icon"
+     inkscape:window-maximized="0"
+     inkscape:window-y="224"
+     inkscape:window-x="286"
+     inkscape:cy="17.5"
+     inkscape:cx="17.5"
+     inkscape:zoom="24.285714"
+     showgrid="false"
+     id="namedview12"
+     inkscape:window-height="697"
+     inkscape:window-width="1826"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <desc
+     id="desc2">Created with Lunacy</desc>
+  <g
+     id="whatsapp-icon">
+    <path
+       stroke="none"
+       fill="#FEFEFE"
+       id="Path"
+       d="M17.511 35C14.0872 35.0005 10.7386 33.9955 7.88103 32.1096L1.15246 34.2591L3.33366 27.7581C1.16196 24.7792 -0.00557257 21.1865 1.99981e-05 17.5C1.99981e-05 7.84928 7.85039 0 17.5 0C27.1496 0 35 7.84928 35 17.5C35 27.1507 27.1529 35 17.5 35L17.511 35Z" />
+    <path
+       stroke="none"
+       fill="#FFFFFF"
+       id="path5"
+       d="M17.4964 0C7.84797 0 0 7.84969 0 17.4996C0 21.3264 1.23435 24.876 3.33264 27.7569L1.15162 34.2593L7.87583 32.1092C10.6424 33.9405 13.9446 35 17.5036 35C27.152 35 35 27.15 35 17.5004C35 7.85085 27.1517 0.000871058 17.5036 0.000871058L17.4935 0.000871058L17.4964 0Z" />
+    <path
+       style="fill:#8dcb5c;fill-opacity:1"
+       stroke="none"
+       fill="#6E888D"
+       id="path7"
+       transform="translate(8.289474 8.289474)"
+       d="M5.15881 0.899629C4.83792 0.0844774 4.57586 0.0548554 4.07314 0.0219422L3.49982 0C2.84735 0 2.16278 0.19748 1.74991 0.628643C1.24718 1.15526 0 2.38182 0 4.89859C0 7.41536 1.78948 9.84874 2.03229 10.1899C2.28365 10.5191 5.52141 15.7698 10.5497 17.9048C14.4817 19.5757 15.6476 19.421 16.5428 19.2246C17.8499 18.9361 19.4886 17.9454 19.9015 16.7496C20.3143 15.5537 20.3143 14.5334 20.1924 14.314C20.0705 14.0946 19.74 13.9848 19.2372 13.7161C18.7345 13.4473 16.2915 12.2207 15.8283 12.055C15.3759 11.8795 14.9437 11.942 14.6015 12.4368C14.1201 13.128 13.6463 13.8302 13.2644 14.2514C12.9628 14.5806 12.4697 14.6245 12.0579 14.4489C11.5049 14.2119 9.95608 13.6546 8.0468 11.9113C6.56858 10.5619 5.56313 8.8789 5.27112 8.37423C4.97911 7.85859 5.24117 7.55908 5.47221 7.28041C5.72357 6.96006 5.96424 6.73405 6.21667 6.43564C6.4691 6.13723 6.60922 5.98144 6.76966 5.63146C6.94081 5.30233 6.81994 4.94028 6.69907 4.68246C6.5782 4.42464 5.57275 1.90677 5.16095 0.886464L5.15881 0.899629Z" />
+  </g>
+</svg>

@@ -10,6 +10,9 @@ import { SwiperOptions } from 'swiper';
   styleUrls: ['./landing.component.scss']
 })
 export class LandingComponent implements OnInit {
+  panelOpenState = false;
+  actionUrl = 'https://outofyourmind.us10.list-manage.com/subscribe/post?u=3122891278a9a00335724905b&amp;id=3b59880b24';
+
   //#region ParticleJS
   width = 100;
   height = 100;
@@ -373,6 +376,10 @@ export class LandingComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onWhatsApp() {
+    window.open('https://wa.me/5215544418951?text=Hola,%20me%20interesa%20saber%20más%20de%20los%20servicios%20de%20OM');
   }
 
 }

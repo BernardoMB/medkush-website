@@ -314,3 +314,135 @@ a nivel internacional apoyados de nuestros socios comerciales Riverleaf Biotech 
     <div class="title">20% Off En todo el sitio</div>
   </div>
 </section>
+
+<section class="certifications-section">
+  <div class="certifications-title">
+    <div class="certifications-title-container">
+      <div>Certificaciones</div>
+      <img class="e1" src="../../../assets/img/elements/element-10.svg" alt="" srcset="">
+    </div>
+  </div>
+  <div class="certifications-content">
+    <div class="certifications-container">
+      <mat-accordion>
+        <mat-expansion-panel #expansion style="margin-top: 20px;">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <div class="title">Lorem ipsum dolor sit amet</div>
+              <div class="description">Donec dignissim enim quis augue euismod pellentesque. </div>
+            </mat-panel-title>
+            <mat-panel-description>
+              <mat-icon style="color: #93ca5c;">verified</mat-icon>
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <p>This is the primary content of the panel.</p>
+        </mat-expansion-panel>
+        <mat-expansion-panel #expansion style="margin-top: 20px;">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <div class="title">Lorem ipsum dolor sit amet</div>
+              <div class="description">Donec dignissim enim quis augue euismod pellentesque. </div>
+            </mat-panel-title>
+            <mat-panel-description>
+              <mat-icon style="color: #93ca5c;">verified</mat-icon>
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <p>This is the primary content of the panel.</p>
+        </mat-expansion-panel>
+        <mat-expansion-panel #expansion style="margin-top: 20px;">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <div class="title">Lorem ipsum dolor sit amet</div>
+              <div class="description">Donec dignissim enim quis augue euismod pellentesque. </div>
+            </mat-panel-title>
+            <mat-panel-description>
+              <mat-icon style="color: #93ca5c;">verified</mat-icon>
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <p>This is the primary content of the panel.</p>
+        </mat-expansion-panel>
+        <mat-expansion-panel #expansion style="margin-top: 20px;">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <div class="title">Lorem ipsum dolor sit amet</div>
+              <div class="description">Donec dignissim enim quis augue euismod pellentesque. </div>
+            </mat-panel-title>
+            <mat-panel-description>
+              <mat-icon style="color: #93ca5c;">verified</mat-icon>
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <p>This is the primary content of the panel.</p>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+  </div>
+</section>
+
+<section class="contact-section">
+  <div class="background"></div>
+  <div class="section-2-container">
+    <div class="container">
+      <div class="left">
+        <div class="left-overlay">
+          <div class="label">Contáctanos</div>
+          <img src="assets/img/logos/whatsapp.svg" alt="whatsapp logo">
+          <div class="phrase">Nos encantaría escuchar de ti</div>
+          <div class="phrase-2">Contáctanos sin compromiso enviando un mensaje a continuación.</div>
+          <div class="button-container">
+            <button class="card-button" (click)="onWhatsApp()">Enviar Whatsapp</button>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <img src="assets/img/logos/telegram.svg" alt="telegram logo">
+        <!-- <form [formGroup]="contactForm">
+          <mat-form-field appearance="outline">
+            <mat-label>{{ 'CONNECT.NAME' | translate}}</mat-label>
+            <input
+              matInput
+              placeholder="{{ 'CONNECT.NAME' | translate}}"
+              formControlName="nameControl"
+              required
+            />
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>{{ 'CONNECT.EMAIL' | translate}}</mat-label>
+            <input
+              matInput
+              placeholder="{{ 'CONNECT.EMAIL' | translate}}"
+              formControlName="emailControl"
+              required
+            />
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>{{ 'CONNECT.MESSAGE' | translate}}</mat-label>
+            <textarea matInput placeholder="Your message" formControlName="messageControl" required></textarea>
+          </mat-form-field>
+          <button class="form-button" (click)="onSubmit()">
+            {{ 'SERVICES.SEND_EMAIL' | translate}}
+          </button>
+        </form> -->
+        <!-- Begin Mailchimp Signup Form -->
+        <form class="embeded-form" action="{{actionUrl}}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <input type="email" placeholder="Escribe tu correo" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+          <input type="text" placeholder="Tu nombre" value="" name="FNAME" class="" id="mce-FNAME">
+          <input type="text" placeholder="Tus apellidos" value="" name="LNAME" class="" id="mce-LNAME">
+          <div id="mce-responses" class="clear">
+            <div class="response" id="mce-error-response" style="display:none"></div>
+            <div class="response" id="mce-success-response" style="display:none"></div>
+          </div>
+          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;" aria-hidden="true">
+            <input type="text" name="b_3122891278a9a00335724905b_3b59880b24" tabindex="-1" value="">
+          </div>
+          <button type="submit" name="subscribe" id="mc-embedded-subscribe">
+            <div>Enviar correo</div>
+            <img src="assets/img/logos/telegram-white.svg" alt="telegram logo">
+          </button>
+        </form>
+        <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+        <!--End mc_embed_signup-->
+      </div>
+    </div>
+  </div>
+</section>

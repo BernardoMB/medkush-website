@@ -6,6 +6,7 @@ mat-sidenav-container {
     font-family: 'Nunito', sans-serif;
     flex-direction: column;
     position: fixed;
+    top: 0px;
     .sidenav-container {
       .logomark-container {
         padding: 20px;
@@ -140,3 +141,13 @@ mat-sidenav-container {
 ::ng-deep .mat-form-field-empty.mat-form-field-label {
     color: white;
 } */
+
+.no-scroll {
+  /* background-color: red;
+  :host {
+    background-color: blue;
+  } */
+  ::ng-deep .super-body {
+    background-color: red;
+  }
+}

@@ -149,6 +149,9 @@ body {
   margin: 0;
   font-family: Roboto, 'Helvetica Neue', sans-serif;
 }
+.no-scroll {
+  overflow-y: hidden;
+}
 
 // Change autocomplete styles in WebKit
 

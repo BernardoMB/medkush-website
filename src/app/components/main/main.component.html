@@ -1,9 +1,11 @@
-<mat-sidenav-container>
+<mat-sidenav-container [ngClass]="{'no-scroll': opened}">
   <mat-sidenav
     #sidenav
     mode="over"
     [(opened)]="opened"
     [autoFocus]="false"
+    (openedStart)="onOpenedStart()"
+    (closedStart)="onClosedStart()"
   >
     <div class="sidenav-container">
       <div class="logomark-container">

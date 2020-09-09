@@ -1,14 +1,16 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, OnInit, HostListener, ViewEncapsulation, Inject } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
-  styleUrls: ['./main.component.scss']
+  styleUrls: ['./main.component.scss'],
+  /* encapsulation: ViewEncapsulation.None */
 })
 export class MainComponent implements OnInit {
   opened: boolean;
 
-  constructor() { }
+  constructor(@Inject(DOCUMENT) private _document) { }
 
   ngOnInit(): void {
   }
@@ -26,5 +28,17 @@ export class MainComponent implements OnInit {
       }
     })();
   } */
+
+  onOpenedStart() {
+    this._document.body.classList.add('no-scroll');
+    // OR you can Add inline style css with the help of code below
+    // this._document.body.style.background = '#fff';
+  }
+
+  onClosedStart() {
+    this._document.body.classList.remove('no-scroll');
+    // OR you can Add inline style css with the help of code below
+    // this._document.body.style.background = '#fff';
+  }
 
 }

@@ -394,54 +394,58 @@ a nivel internacional apoyados de nuestros socios comerciales Riverleaf Biotech 
         </div>
       </div>
       <div class="right">
-        <img src="assets/img/logos/telegram.svg" alt="telegram logo">
-        <!-- <form [formGroup]="contactForm">
-          <mat-form-field appearance="outline">
-            <mat-label>{{ 'CONNECT.NAME' | translate}}</mat-label>
-            <input
-              matInput
-              placeholder="{{ 'CONNECT.NAME' | translate}}"
-              formControlName="nameControl"
-              required
-            />
-          </mat-form-field>
-          <mat-form-field appearance="outline">
-            <mat-label>{{ 'CONNECT.EMAIL' | translate}}</mat-label>
-            <input
-              matInput
-              placeholder="{{ 'CONNECT.EMAIL' | translate}}"
-              formControlName="emailControl"
-              required
-            />
-          </mat-form-field>
-          <mat-form-field appearance="outline">
-            <mat-label>{{ 'CONNECT.MESSAGE' | translate}}</mat-label>
-            <textarea matInput placeholder="Your message" formControlName="messageControl" required></textarea>
-          </mat-form-field>
-          <button class="form-button" (click)="onSubmit()">
-            {{ 'SERVICES.SEND_EMAIL' | translate}}
-          </button>
-        </form> -->
-        <!-- Begin Mailchimp Signup Form -->
-        <form class="embeded-form" action="{{actionUrl}}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-          <input type="email" placeholder="Escribe tu correo" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-          <input type="text" placeholder="Tu nombre" value="" name="FNAME" class="" id="mce-FNAME">
-          <input type="text" placeholder="Tus apellidos" value="" name="LNAME" class="" id="mce-LNAME">
-          <div id="mce-responses" class="clear">
-            <div class="response" id="mce-error-response" style="display:none"></div>
-            <div class="response" id="mce-success-response" style="display:none"></div>
-          </div>
-          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-          <div style="position: absolute; left: -5000px;" aria-hidden="true">
-            <input type="text" name="b_3122891278a9a00335724905b_3b59880b24" tabindex="-1" value="">
-          </div>
-          <button type="submit" name="subscribe" id="mc-embedded-subscribe">
-            <div>Enviar correo</div>
-            <img src="assets/img/logos/telegram-white.svg" alt="telegram logo">
-          </button>
-        </form>
-        <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-        <!--End mc_embed_signup-->
+        <div class="right-overlay">
+          <img src="assets/img/logos/telegram-white-stroke.svg" alt="telegram logo">
+          <!-- <form [formGroup]="contactForm">
+            <mat-form-field appearance="outline">
+              <mat-label>{{ 'CONNECT.NAME' | translate}}</mat-label>
+              <input
+                matInput
+                placeholder="{{ 'CONNECT.NAME' | translate}}"
+                formControlName="nameControl"
+                required
+              />
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+              <mat-label>{{ 'CONNECT.EMAIL' | translate}}</mat-label>
+              <input
+                matInput
+                placeholder="{{ 'CONNECT.EMAIL' | translate}}"
+                formControlName="emailControl"
+                required
+              />
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+              <mat-label>{{ 'CONNECT.MESSAGE' | translate}}</mat-label>
+              <textarea matInput placeholder="Your message" formControlName="messageControl" required></textarea>
+            </mat-form-field>
+            <button class="form-button" (click)="onSubmit()">
+              {{ 'SERVICES.SEND_EMAIL' | translate}}
+            </button>
+          </form> -->
+          <!-- Begin Mailchimp Signup Form -->
+          <form class="embeded-form" action="{{actionUrl}}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <input type="email" placeholder="Escribe tu correo" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+            <input type="text" placeholder="Tu nombre" value="" name="FNAME" class="" id="mce-FNAME">
+            <input type="text" placeholder="Tus apellidos" value="" name="LNAME" class="" id="mce-LNAME">
+            <div id="mce-responses" class="clear">
+              <div class="response" id="mce-error-response" style="display:none"></div>
+              <div class="response" id="mce-success-response" style="display:none"></div>
+            </div>
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+              <input type="text" name="b_3122891278a9a00335724905b_3b59880b24" tabindex="-1" value="">
+            </div>
+            <button type="submit" name="subscribe" id="mc-embedded-subscribe">
+              <div>Enviar correo</div>
+              <img src="assets/img/logos/telegram.svg" alt="telegram logo">
+            </button>
+
+            <!-- <button mat-flat-button class="action-button">Agregar al carrito</button> -->
+          </form>
+          <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+          <!--End mc_embed_signup-->
+        </div>
       </div>
     </div>
   </div>

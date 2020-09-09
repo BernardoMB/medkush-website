@@ -1140,14 +1140,14 @@ $develop-border-thickness: 0px;
         border-radius: 30px;
         box-shadow: 0px 10px 20px rgba(0,0,0,0.15);
         .left-overlay {
+          background-image: url('../../../assets/img/backgrounds/white-pattern-mesh.svg');
+          background-size: cover;
           display: flex;
           flex-direction: column;
           justify-content: space-between;
           align-items: center;
           padding: 30px;
           color: white;
-          background-image: url('../../../assets/img/backgrounds/white-pattern-mesh.svg');
-          background-size: cover;
           .label {
             // font-family: marthin;
             font-size: 55px;
@@ -1203,94 +1203,130 @@ $develop-border-thickness: 0px;
         }
       }
       .right {
-        display: flex;
-        flex-direction: column;
-        //justify-content: space-between;
-        align-items: center;
-        padding: 30px;
-        background-color: white;
-        /* form {
-          width: 100%;
+        margin-top: 60px;
+        border-radius: 30px;
+        background-image: url('../../../assets/img/backgrounds/medkush-patter.jpg');
+        background-size: cover;
+        box-shadow: 0px 10px 20px rgba(0,0,0,0.15);
+        .right-overlay {
+          $color1: rgba(0, 0, 0, 0.05);
+          $color2: rgba(0, 0, 0, 0.05);
+            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f68b22+0,94217d+100 */
+          background: -moz-linear-gradient(top,  $color1 0%, $color2 100%); /* FF3.6-15 */
+          background: -webkit-linear-gradient(top,  $color1 0%,$color2 100%); /* Chrome10-25,Safari5.1-6 */
+          background: linear-gradient(to bottom,  $color1 0%,$color2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          border-radius: inherit;
           display: flex;
           flex-direction: column;
+          //justify-content: space-between;
           align-items: center;
-          margin-top: 20px;
-          mat-form-field {
+          padding: 30px;
+          //background-color: white;
+          /* form {
             width: 100%;
-          }
-          .form-button {
-            cursor: pointer;
-            padding: 10px 40px;
-            border-radius: 20px;
-            text-transform: uppercase;
-            border: 1px solid;
-            color: #C1877C;
-            background-color: white;
-            font-family: 'Barlow', sans-serif;
-            font-size: 21px;
-            font-weight: 700;
-            line-height: 1;
-            text-align: center;
-            letter-spacing: 0.9545454px;
-          }
-        } */
-        form {
-          // Chrome, Firefox, Opera, Safari 10.1+
-          ::placeholder {
-            color: #4cca5b;
-            opacity: 1;
-          }
-          // Internet Explorer 10-11
-          :-ms-input-placeholder {
-            color: #4cca5b;
-          }
-          // Microsoft edge
-          ::-ms-input-placeholder {
-            color: #4cca5b;
-          }
-          width: 100%;
-          display: flex;
-          flex-grow: 1;
-          flex-direction: column;
-          justify-content: space-between;
-          align-items: center;
-          flex-wrap: wrap;
-          max-width: 738px;
-          margin: auto;
-          input {
-            flex-grow: 1;
-            margin: 10px;
-            color: #4cca5b;
-            border: 1px solid #4cca5b;
-            padding: 10px 20px;
-            border-radius: 30px;
-            width: calc(100% - 62px);
-            &:focus {
-              outline: none;
-            }
-          }
-          button {
-            cursor: pointer;
             display: flex;
-            //flex-grow: 1;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+            mat-form-field {
+              width: 100%;
+            }
+            .form-button {
+              cursor: pointer;
+              padding: 10px 40px;
+              border-radius: 20px;
+              text-transform: uppercase;
+              border: 1px solid;
+              color: #C1877C;
+              background-color: white;
+              font-family: 'Barlow', sans-serif;
+              font-size: 21px;
+              font-weight: 700;
+              line-height: 1;
+              text-align: center;
+              letter-spacing: 0.9545454px;
+            }
+          } */
+          form {
+            // Chrome, Firefox, Opera, Safari 10.1+
+            ::placeholder {
+              //color: #89c65b;
+              opacity: 1;
+            }
+            // Internet Explorer 10-11
+            :-ms-input-placeholder {
+              //color: #89c65b;
+            }
+            // Microsoft edge
+            ::-ms-input-placeholder {
+              //color: #89c65b;
+            }
+            width: 100%;
+            display: flex;
+            flex-grow: 1;
+            flex-direction: column;
             justify-content: space-between;
             align-items: center;
-            margin: 10px;
-            background-color: #4cca5b;
-            color: white;
-            border: 1px solid #4cca5b;
-            padding: 10px 20px;
-            border-radius: 30px;
-            text-transform: uppercase;
-            font-family: 'Barlow', sans-serif;
-            font-weight: bold;
-            //width: 196px;
-            &:focus {
-              outline: none;
+            flex-wrap: wrap;
+            max-width: 738px;
+            margin: auto;
+            input {
+              flex-grow: 1;
+              margin: 10px;
+              //color: #89c65b;
+              border: 2px solid black;
+              padding: 10px 20px;
+              border-radius: 30px;
+              width: calc(100% - 62px);
+              &:focus {
+                outline: none;
+              }
             }
-            img {
-              height: 16px;
-              margin-left: 10px;
+            button {
+              cursor: pointer;
+              display: flex;
+              //flex-grow: 1;
+              justify-content: space-between;
+              align-items: center;
+              margin: 10px;
+              background-color: white;
+              color: #545454;
+              border: 2px solid black;
+              padding: 10px 20px;
+              border-radius: 30px;
+              font-family: 'Barlow', sans-serif;
+              font-weight: bold;
+              //width: 196px;
+              &:focus {
+                outline: none;
+              }
+              img {
+                height: 16px;
+                margin-left: 10px;
+              }
+            }
+
+            .action-button {
+              border-radius: 2rem;
+              padding: 6px 20px;
+              flex-grow: 1;
+              text-align: center;
+              font-size: 1rem;
+              font-weight: 500;
+              margin-right: 10px;
+              line-height: 24px;
+              border: solid 2px transparent;
+              background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #f68b22, #94217d);
+              background-origin: border-box;
+              background-clip: content-box, border-box;
+              color: white;
+              cursor: pointer;
+              margin-bottom: 25px;
+              box-shadow: none;
+              &:hover {
+                box-shadow: 2px 1000px 1px white inset;
+                color: #545454;
+              }
             }
           }
         }
@@ -1312,7 +1348,7 @@ $develop-border-thickness: 0px;
   ::ng-deep {
     /* Border */
     .mat-form-field-appearance-outline .mat-form-field-outline {
-      color: #C1877C;
+      color: #89c65b;
     }
   }
 }

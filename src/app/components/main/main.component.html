@@ -3,37 +3,40 @@
     #sidenav
     mode="over"
     [(opened)]="opened"
+    [autoFocus]="false"
   >
-    <div class="logomark-container">
-      <img class="om-logomark" src="/assets/img/logos/medkush/medkush-logo.svg" alt="om logomark"/>
-    </div>
-    <div class="buttons-conatiner">
-      <!-- <button mat-flat-button class="login-button">Iniciar sesión</button>
-      <button mat-flat-button class="register-button">Registro</button> -->
-      <a class="login-button">Iniciar sesión</a>
-      <a class="register-button">Registro</a>
-    </div>
-    <div class="search-container">
-      <mat-form-field appearance="outline">
-        <span matPrefix>
-          <mat-icon>search</mat-icon>
-        </span>
-        <mat-label>Buscar</mat-label>
-        <input matInput placeholder="Buscar" autofocus="false" tabindex="-1">
-      </mat-form-field>
-    </div>
-    <div class="navigation-links-container">
-      <a routerLink="/home" routerLinkActive="active" (click)="opened = false">Inicio</a>
-      <a routerLink="/about" routerLinkActive="active" (click)="opened = false">Nosotros</a>
-      <a routerLink="/info" routerLinkActive="active" (click)="opened = false">Descrubre</a>
-      <a routerLink="/faq" routerLinkActive="active" (click)="opened = false">FAQ</a>
-      <a routerLink="/blog" routerLinkActive="active" (click)="opened = false">Blog</a>
-      <a routerLink="/articles" routerLinkActive="active" (click)="opened = false">Noticias</a>
+    <div class="sidenav-container">
+      <div class="logomark-container">
+        <img class="om-logomark" src="/assets/img/logos/medkush/medkush-logo.svg" alt="om logomark"/>
+      </div>
+      <div class="buttons-conatiner">
+        <!-- <button mat-flat-button class="login-button">Iniciar sesión</button>
+        <button mat-flat-button class="register-button">Registro</button> -->
+        <a class="login-button">Iniciar sesión</a>
+        <a class="register-button">Registro</a>
+      </div>
+      <div class="search-container">
+        <mat-form-field appearance="outline">
+          <span matPrefix>
+            <mat-icon>search</mat-icon>
+          </span>
+          <mat-label>Buscar</mat-label>
+          <input matInput placeholder="Buscar" autofocus="false" tabindex="-1">
+        </mat-form-field>
+      </div>
+      <div class="navigation-links-container">
+        <a routerLink="/home" routerLinkActive="active" (click)="opened = false">Inicio</a>
+        <a routerLink="/about" routerLinkActive="active" (click)="opened = false">Nosotros</a>
+        <a routerLink="/info" routerLinkActive="active" (click)="opened = false">Descrubre</a>
+        <a routerLink="/faq" routerLinkActive="active" (click)="opened = false">FAQ</a>
+        <a routerLink="/blog" routerLinkActive="active" (click)="opened = false">Blog</a>
+        <a routerLink="/articles" routerLinkActive="active" (click)="opened = false">Noticias</a>
+      </div>
     </div>
   </mat-sidenav>
   <mat-sidenav-content>
     <!-- <app-header (toggleSidenav)="sidenav.toggle()" (toggleSidenav)="scrollToTop()"></app-header> -->
-    <app-header (toggleSidenav)="sidenav.toggle()" (toggleSidenav)="scrollToTop()"></app-header>
+    <app-header (toggleSidenav)="sidenav.toggle()"></app-header>
     <div class="router-outlet-container">
       <router-outlet></router-outlet>
     </div>

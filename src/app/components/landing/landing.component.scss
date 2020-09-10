@@ -46,7 +46,11 @@
   height: 30px;
   background: url('../../../assets/img/backgrounds/medkush-patter.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center -392px;
+  @media screen and (max-width: 425px) {
+    background-position: center -92px;
+  }
 }
 
 .as-seen-on {
@@ -636,7 +640,7 @@ $develop-border-thickness: 0px;
     }
     @media screen and (max-width: 425px) {
       margin-top: 10px;
-      margin-bottom: 0px;
+      margin-bottom: 20px;
     }
   }
   .blog-section {
@@ -1079,27 +1083,32 @@ $develop-border-thickness: 0px;
       position: relative;
       max-width: 912px;
       margin: auto;
-      padding: 20px 30px;
+      padding: 20px 40px;
       display: flex;
       flex-direction: column;
       ::ng-deep {
         mat-expansion-panel-header {
-          height: unset !important;
-          padding: 10px 24px;
+          //height: unset !important;
+          //padding: 10px 24px;
           mat-panel-title {
-            flex-direction: column;
+            // flex-direction: column;
             .title {
               color: #6D4975;
-              font-size: 20px;
               font-weight: bold;
+              display: flex;
+              align-items: center;
+              span {
+                margin-right: 10px;
+              }
+              /* font-size: 20px;
               margin-bottom: 5px;
-              line-height: 1.2;
+              line-height: 1.2; */
             }
           }
         }
       }
-      @media screen and (max-width: 630px) {
-        padding: 10px 30px;
+      @media screen and (max-width: 768px) {
+        padding: 10px 20px;
       }
     }
   }
@@ -1188,16 +1197,16 @@ $develop-border-thickness: 0px;
               cursor: pointer;
               padding: 10px 40px;
               border-radius: 20px;
-              text-transform: uppercase;
+              //text-transform: uppercase;
               border: 0px solid;
               color: #4cca5b;
               background-color: white;
               font-family: 'Barlow', sans-serif;
-              font-size: 21px;
+              font-size: 20px;
               font-weight: 700;
-              line-height: 1;
+              line-height: 1.2;
               text-align: center;
-              letter-spacing: 0.9545454px;
+              //letter-spacing: 0.9545454px;
             }
           }
         }
@@ -1338,12 +1347,13 @@ $develop-border-thickness: 0px;
         }
       }
     }
-    @media screen and (max-width: 780px) {
+    @media screen and (max-width: 768px) {
       padding: 0px 20px;
     }
   }
   @media screen and (max-width: 500px) {
     padding: 40px 0px;
+    padding-bottom: 60px;
   }
   ::ng-deep {
     /* Border */

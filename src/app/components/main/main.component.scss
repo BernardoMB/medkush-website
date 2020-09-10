@@ -107,10 +107,12 @@ mat-sidenav-container {
               font-size: 30px;
               color: #7dc832;
               transform: rotate(180deg);
-              font-stretch: extra-condensed;
+              font-weight: 200;
+              //font-stretch: extra-condensed;
               position: absolute;
-              //top: 15px;
-              right: 10px;
+              //top: 10px;
+              top: calc(50% - 10px);
+              right: 20px;
               //margin-right: -5px;
             }
           }

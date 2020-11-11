@@ -149,9 +149,25 @@ body {
   margin: 0;
   font-family: Roboto, 'Helvetica Neue', sans-serif;
 }
+
 .no-scroll {
   overflow-y: hidden;
 }
+
+.divider {
+  margin-top: 104px;
+  box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
+  background-color: black;
+}
+
+.coming-soon-section {
+  display: flex;
+  justify-content: center;
+  .coming-soon-card {
+    margin: 60px;
+  }
+}
+
 
 // Change autocomplete styles in WebKit
 

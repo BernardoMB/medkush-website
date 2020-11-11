@@ -7,6 +7,7 @@ import { MatBadgeModule } from '@angular/material/badge';
 import { MatButtonModule } from '@angular/material/button';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatExpansionModule } from '@angular/material/expansion';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   // Add material components the application uses
@@ -18,7 +19,8 @@ import { MatExpansionModule } from '@angular/material/expansion';
     MatBadgeModule,
     MatButtonModule,
     MatGridListModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatCardModule
   ],
   exports: [
     MatSidenavModule,
@@ -28,7 +30,8 @@ import { MatExpansionModule } from '@angular/material/expansion';
     MatBadgeModule,
     MatButtonModule,
     MatGridListModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatCardModule
   ]
 })
 export class MaterialModule {}

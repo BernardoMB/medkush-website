@@ -369,9 +369,6 @@ $develop-border-thickness: 0px;
             span {
               font-weight: 700;
             }
-            @media screen and (max-width: 425px) {
-              font-size: 14px;
-            }
           }
           .quote {
             margin: 40px 0px;
@@ -398,6 +395,9 @@ $develop-border-thickness: 0px;
               bottom: 0px;
               right:  0px;
             }
+          }
+          @media screen and (max-width: 425px) {
+            font-size: 14px;
           }
         }
       }

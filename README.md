@@ -32,6 +32,10 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 npm install netlify-cli -g && netlify login
 ```
 
+```bash
+netlify deploy --prod
+```
+
 # Inspiracion
 
 ## Informacion

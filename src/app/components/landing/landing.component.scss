@@ -362,10 +362,10 @@ $develop-border-thickness: 0px;
           max-width: 610px;
           padding: 40px;
           position: relative;
+          font-size: 24px;
+          color: #545454;
           p {
-            color: #545454;
             line-height: 1.5;
-            font-size: 24px;
             span {
               font-weight: 700;
             }
@@ -374,18 +374,30 @@ $develop-border-thickness: 0px;
             }
           }
           .quote {
-            position: absolute;
-            line-height: 1;
-            font-size: 60px;
-            color: #ab7bb6;
-          }
-          .q1 {
-            top: 0px;
-            left: 0px;
-          }
-          .q2 {
-            bottom: 0px;
-            right:  0px;
+            margin: 40px 0px;
+            .text {
+              line-height: 1.2;
+            }
+            .top-quote {
+              display: flex;
+            }
+            .bottom-quote {
+              display: flex;
+              justify-content: flex-end;
+            }
+            .q {
+              line-height: 1;
+              font-size: 60px;
+              color: #ab7bb6;
+            }
+            .q1 {
+              top: 0px;
+              left: 0px;
+            }
+            .q2 {
+              bottom: 0px;
+              right:  0px;
+            }
           }
         }
       }

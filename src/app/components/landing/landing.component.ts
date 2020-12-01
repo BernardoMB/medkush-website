@@ -56,7 +56,7 @@ export class LandingComponent implements OnInit {
         }
       },
       size: {
-        value: 3,
+        value: 6,
         random: true,
         anim: {
           enable: false,

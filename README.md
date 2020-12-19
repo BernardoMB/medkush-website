@@ -83,7 +83,7 @@ https://cbdamericanshaman.com/
 - Telefono de contacto
 - Email de contacto
 
-# Domain migration
+# Domain migration from Godaddy to Netlify
 
 https://www.youtube.com/watch?v=qlrCptpwtgs&t=189s
 

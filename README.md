@@ -36,6 +36,11 @@ npm install netlify-cli -g && netlify login
 netlify deploy --prod
 ```
 
+# Domain migration from Godaddy to Netlify
+
+https://www.youtube.com/watch?v=qlrCptpwtgs&t=189s
+
+
 # Inspiracion
 
 ## Informacion
@@ -60,30 +65,3 @@ https://www.endoca.com/
 https://nuleafnaturals.com/
 https://cbdfx.com/
 https://cbdamericanshaman.com/
-
-# Pending info 
-
-- Mision
-- Vision
-- Valores
-- Terminos y condiciones
-- Aviso legal
-- Politica de privacidad 
-- Politica de devolucion
-- Direccion de contacto
-- Guia del comprador (Como son los envios, tiempos de entrega, rastreo de envios, como es la comunicacion con el comprador). 
-- Ligas a redes sociales (Instagram, Facebook, Twitter, Tinder, etc)
-- Marcas patrocinadoras o integradas a la cadena de valor de Medkush 
-- Video promocional si es que existe
-- Fotos y bio (dos parrafos) de los socios fundadores de Medkush
-
-# Not pending info
-
-- Lista de los productos con, descripcion, precio, descuentos, precio al mayoreo, minimo de unicades para acceder al precio al mayoreo, gramaje/litraje, disponibilidad, procentaje de THC, procentaje de CBD, mas fotos del producto (si se pude), usos recomendados, instrucciones de uso, contraindicaciones.
-- Telefono de contacto
-- Email de contacto
-
-# Domain migration from Godaddy to Netlify
-
-https://www.youtube.com/watch?v=qlrCptpwtgs&t=189s
-

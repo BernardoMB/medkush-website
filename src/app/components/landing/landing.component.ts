@@ -343,14 +343,14 @@ export class LandingComponent implements OnInit {
     {
       name: 'Aceite CBD',
       grammage: '150 ml',
-      price: 960,
+      price: 1499,
       discount: 0.2,
       imgUrl: '../../../../assets/img/products-delete/gotas-new.png'
     },
     {
       name: 'Bálsamo CBD',
       grammage: '150 ml',
-      price: 960,
+      price: 1499,
       discount: 0.2,
       imgUrl: '../../../../assets/img/products-delete/balsamo.png'
     },

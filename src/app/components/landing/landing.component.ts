@@ -379,7 +379,7 @@ export class LandingComponent implements OnInit {
   }
 
   onWhatsApp() {
-    window.open('https://wa.me/5217771996646?text=Hola,%20me%20interesa%20saber%20más%20de%20los%20servicios%20de%20OM');
+    window.open('https://wa.me/5217771996646?text=Hola,%20me%20interesa%20saber%20más%20sobre%20los%20productos%20de%20Medkush');
   }
 
 }

@@ -1,3 +1,5 @@
+@import './variables';
+
 // Import animations
 // @import '~animate.css/animate.css';
 
@@ -158,6 +160,10 @@ body {
   margin-top: 104px;
   box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
   background-color: black;
+  @media screen and (max-width: $header-break) {
+    box-shadow: none;
+    margin-top: 74px;
+  }
 }
 
 .coming-soon-section {
@@ -279,6 +285,7 @@ $focus-outline-thickeness: 2px;
 @import '~ngx-toastr/toastr-bs4-alert';
 
 // Swiper
+
 // Commented because building issues
 @import '~swiper/css/swiper.min.css';
 

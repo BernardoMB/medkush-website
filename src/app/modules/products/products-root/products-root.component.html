@@ -1,10 +1,24 @@
-<div>Medkush / Productos</div>
+<div class="divider"></div>
 
-<div>Productos del CDB</div>
-<div>
-  Aquí encontraras nuestra completa colección de productos. Lea cuidadosamente los usos y los potenciales beneficios para su bienestar. No dude en ponerse en contacto si tiene alguna pregunta o si requiere información adicional.
+<div class="products-container">
+  <div>Medkush / Productos</div>
+
+  <div>Productos del CDB</div>
+  <div>
+    Aquí encontraras nuestra completa colección de productos. Lea cuidadosamente los usos y los potenciales beneficios para su bienestar. No dude en ponerse en contacto si tiene alguna pregunta o si requiere información adicional.
+  </div>
+
+  <div class="product-cards-container">
+    <div *ngFor="let product of products" class="product-card-wrapper">
+      <div class="product-container">
+        <div class="product-image" [style.backgroundImage]="'url(' + product.imgUrl + ')'"></div>
+        <div class="name">{{product.name}}</div>
+        <div class="grammage">{{product.grammage}}</div>
+        <div class="price">{{product.price | currency}}</div>
+        <div class="final-price">{{product.price * (1 - product.discount) | currency}}</div>
+        <button mat-flat-button class="action-button">Agregar al carrito</button>
+      </div>
+    </div>
+  </div>
 </div>
 
-<div class="product-cards-container">
-
-</div>

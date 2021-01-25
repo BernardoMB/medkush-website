@@ -1,14 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-
-export interface Product {
-  id: number;
-  name: string;
-  description: string;
-  price: number; // (Mexican peso)
-  grammage: number; // (miligrams: mg)
-  discount: number; // (percentage)
-}
+import { Product } from '../interfaces/product.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -26,7 +18,8 @@ export class ProductsService {
       `,
       price: 1499,
       grammage: 2000,
-      discount: 0.1
+      discount: 0.1,
+      imgUrl: 'https://i.imgur.com/xuIcDYV.png'
     },
     {
       id: 2,
@@ -39,7 +32,8 @@ export class ProductsService {
       `,
       price: 1499,
       grammage: 3333,
-      discount: 0.1
+      discount: 0.1,
+      imgUrl: 'https://i.imgur.com/HYSmmm9.jpg'
     },
     {
       id: 3,
@@ -52,7 +46,8 @@ export class ProductsService {
       `,
       price: 1499,
       grammage: 1599,
-      discount: 0.1
+      discount: 0.1,
+      imgUrl: 'https://i.imgur.com/Qz6C41w.jpg'
     },
   ];
 

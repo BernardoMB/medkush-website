@@ -7,13 +7,15 @@ import { ProductDetailComponent } from './components/product-detail/product-deta
 import { ProductsResolverService } from './services/products-resolver.service';
 import { ProductsService } from './services/products.service';
 import { ProductDetailResolverService } from './services/product-detail-resolver.service';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [ProductsRootComponent, ProductDetailComponent],
   imports: [
     CommonModule,
     ProductsRoutingModule,
-    MaterialModule
+    MaterialModule,
+    SharedModule
   ],
   providers: [
     ProductsService,

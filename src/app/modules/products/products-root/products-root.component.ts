@@ -24,4 +24,8 @@ export class ProductsRootComponent implements OnInit {
     });
   }
 
+  navigateToProduct(productId: number) {
+    this.router.navigate([`./${productId}`], { relativeTo: this.route, skipLocationChange: false });
+  }
+
 }

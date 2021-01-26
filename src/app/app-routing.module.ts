@@ -13,7 +13,7 @@ const routes: Routes = [
       { path: '', redirectTo: '/home', pathMatch: 'full' },
       { path: 'home', component: LandingComponent },
       { path: 'about', loadChildren: () => import('./modules/about/about.module').then(mod => mod.AboutModule) },
-      { path: 'products', loadChildren: () => import('./modules/products/products.module').then(mod => mod.ProductsModule) },
+      { path: 'products', loadChildren: () => import('./modules/products/products.module').then(mod => mod.ProductsModule), data: { breadcrumb: 'Productos' } },
       { path: 'info', loadChildren: () => import('./modules/info/info.module').then(mod => mod.InfoModule) },
       { path: 'faq', loadChildren: () => import('./modules/faq/faq.module').then(mod => mod.FaqModule) },
       { path: 'blog', loadChildren: () => import('./modules/blog/blog.module').then(mod => mod.BlogModule) },

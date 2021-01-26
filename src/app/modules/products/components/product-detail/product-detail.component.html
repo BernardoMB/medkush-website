@@ -1,1 +1,21 @@
-<p>product-detail works!</p>
+<div class="divider"></div>
+
+<div style="margin-top: 30px; width: 100%; height: 30px;"></div>
+
+<div class="products-container">
+  <app-breadcrumb></app-breadcrumb>
+  <div class="product-container">
+    <div style="cursor: pointer;">
+      <div class="product-image" [style.backgroundImage]="'url(' + product.imgUrl + ')'"></div>
+      <div class="name" >{{product.name}}</div>
+      <div class="grammage">{{product.grammage}}</div>
+      <div class="price">{{product.price | currency}}</div>
+      <div class="final-price">{{product.price * (1 - product.discount) | currency}}</div>
+    </div>
+    <button mat-flat-button class="action-button">Agregar al carrito</button>
+    <div class="view-product">Ver producto</div>
+  </div>
+
+  <h1>Description del producto</h1>
+  <div [innerHTML]="product.description"></div>
+</div>

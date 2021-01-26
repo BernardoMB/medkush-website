@@ -6,19 +6,31 @@ import { ProductDetailResolverService } from './services/product-detail-resolver
 import { ProductsResolverService } from './services/products-resolver.service';
 
 
-const routes: Routes = [
-  {
-    path: '',
-    component: ProductsRootComponent,
-    resolve: { productsInfo: ProductsResolverService }
+const routes: Routes = [{
+  path: '',
+  data: {
+    breadcrumb: null
   },
-  {
-    path: ':id',
-    component: ProductDetailComponent,
-    runGuardsAndResolvers: 'paramsOrQueryParamsChange',
-    resolve: { productDetailInfo: ProductDetailResolverService }
-  }
-];
+  children: [
+    {
+      path: '',
+      component: ProductsRootComponent,
+      resolve: { productsInfo: ProductsResolverService },
+      data: {
+        breadcrumb: null
+      },
+    },
+    {
+      path: ':id',
+      component: ProductDetailComponent,
+      runGuardsAndResolvers: 'paramsOrQueryParamsChange',
+      resolve: { productDetailInfo: ProductDetailResolverService },
+      data: {
+        breadcrumb: ''
+      },
+    }
+  ]
+}];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

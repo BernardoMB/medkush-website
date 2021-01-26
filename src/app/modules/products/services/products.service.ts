@@ -58,7 +58,7 @@ export class ProductsService {
       setTimeout(() => {
         obs.next(this.products);
         obs.complete();
-      }, 5000);
+      }, 0);
     });
   }
 
@@ -67,7 +67,7 @@ export class ProductsService {
     let found: Product | undefined = undefined;
     let i = 0;
     while (found == null && i < arr.length) {
-      if (arr[i].id === id) {
+      if (arr[i].id == id) {
         found = arr[i];
       }
       i++; // i = i + 1; // i += 1; // i -= -1;
@@ -76,7 +76,7 @@ export class ProductsService {
       setTimeout(() => {
         obs.next(found);
         obs.complete();
-      }, 2000);
+      }, 0);
     });
   }
 }

@@ -21,19 +21,22 @@ export class LandingComponent implements OnInit {
     position: 'absolute',
     width: '100%',
     height: '100%',
-    'z-index': -1,
+    /* 'z-index': -1, */
   };
   myParams: object = {
     particles: {
       number: {
-        value: 50,
+        value: 100,
         density: {
           enable: true,
           value_area: 800
         }
       },
-      color: {
+      /* color: {
         value: '#6bb139'
+      }, */
+      "color": {
+        "value": ["#BD10E0","#B8E986","#50E3C2","#FFD300","#E86363"]
       },
       shape: {
         type: 'circle',
@@ -92,11 +95,11 @@ export class LandingComponent implements OnInit {
       "detect_on": "canvas",
       "events": {
         "onhover": {
-          "enable": false,
+          "enable": true,
           "mode": "repulse"
         },
         "onclick": {
-          "enable": false,
+          "enable": true,
           "mode": "push"
         },
         "resize": true
@@ -198,11 +201,11 @@ export class LandingComponent implements OnInit {
       "detect_on": "canvas",
       "events": {
         "onhover": {
-          "enable": false,
-          "mode": "repulse"
+          "enable": true,
+          "mode": "bubble"
         },
         "onclick": {
-          "enable": false,
+          "enable": true,
           "mode": "push"
         },
         "resize": true

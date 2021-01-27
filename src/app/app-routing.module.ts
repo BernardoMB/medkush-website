@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { MainComponent } from './components/main/main.component';
 import { LandingComponent } from './components/landing/landing.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
-
+import { ProductsResolverService } from './modules/products/services/products-resolver.service';
 
 const routes: Routes = [
   {
@@ -11,7 +11,7 @@ const routes: Routes = [
     component: MainComponent,
     children: [
       { path: '', redirectTo: '/home', pathMatch: 'full' },
-      { path: 'home', component: LandingComponent },
+      { path: 'home', component: LandingComponent, resolve: { productsInfo: ProductsResolverService } },
       { path: 'about', loadChildren: () => import('./modules/about/about.module').then(mod => mod.AboutModule) },
       { path: 'products', loadChildren: () => import('./modules/products/products.module').then(mod => mod.ProductsModule), data: { breadcrumb: 'Productos' } },
       { path: 'info', loadChildren: () => import('./modules/info/info.module').then(mod => mod.InfoModule) },

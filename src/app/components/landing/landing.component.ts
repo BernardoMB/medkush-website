@@ -1,6 +1,7 @@
 // tslint:disable: quotemark
 // tslint:disable: object-literal-key-quotes
 import { Component, OnInit, ViewChildren, QueryList } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import { SwiperConfigInterface, SwiperDirective } from 'ngx-swiper-wrapper';
 import { SwiperOptions } from 'swiper';
 
@@ -339,22 +340,23 @@ export class LandingComponent implements OnInit {
   //#endregion
 
   //#region Products
-  products = [
-    {
-      name: 'Aceite CBD',
-      grammage: '150 ml',
-      price: 1499,
-      discount: 0.2,
-      imgUrl: '../../../../assets/img/products-delete/gotas-new.png'
-    },
-    {
-      name: 'Bálsamo CBD',
-      grammage: '150 ml',
-      price: 1499,
-      discount: 0.2,
-      imgUrl: '../../../../assets/img/products-delete/balsamo.png'
-    },
-  ];
+  // products = [
+  //   {
+  //     name: 'Aceite CBD',
+  //     grammage: '150 ml',
+  //     price: 1499,
+  //     discount: 0.2,
+  //     imgUrl: '../../../../assets/img/products-delete/gotas-new.png'
+  //   },
+  //   {
+  //     name: 'Bálsamo CBD',
+  //     grammage: '150 ml',
+  //     price: 1499,
+  //     discount: 0.2,
+  //     imgUrl: '../../../../assets/img/products-delete/balsamo.png'
+  //   },
+  // ];
+  products;
   @ViewChildren(SwiperDirective) swiperDirective3: QueryList<SwiperDirective>;
   config3: SwiperConfigInterface = {
     slidesPerView: 1,
@@ -373,9 +375,18 @@ export class LandingComponent implements OnInit {
   index3: number;
   //#endregion
 
-  constructor() { }
+  constructor(
+    private readonly route: ActivatedRoute,
+    private router: Router,
+  ) { }
 
   ngOnInit(): void {
+    this.route.data.subscribe((data) => {
+      console.log('Resolved data', {data});
+      if (data && data.productsInfo && data.productsInfo.products) {
+        this.products = data.productsInfo.products;
+      }
+    });
   }
 
   onWhatsApp() {

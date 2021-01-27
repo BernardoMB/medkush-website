@@ -20,6 +20,7 @@ export class ProductsResolverService implements Resolve<any> {
         const productsInfo = {
           products: allResponses[0],
         };
+        console.log('Products resolver: resolving info', productsInfo);
         return productsInfo;
       })
     );

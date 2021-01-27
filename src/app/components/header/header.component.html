@@ -17,17 +17,17 @@
     <div class="white-header-background" [ngClass]="{'header-white': isWhite}"></div>
     <div class="header-container">
       <div class="logo-container">
-        <div class="logo-container-overlay">
+        <div class="logo-container-overlay focus-outline" [routerLink]="['/']">
           <img src="assets/img/logos/medkush/medkush-logo-white.svg" alt="medkush-logo">
         </div>
       </div>
       <div class="navigation-container">
-        <a routerLink="/home" routerLinkActive="active">Inicio</a>
-        <a routerLink="/about" routerLinkActive="active">Nosotros</a>
-        <a routerLink="/products" routerLinkActive="active">Productos</a>
-        <a routerLink="/faq" routerLinkActive="active">FAQ</a>
-        <a routerLink="/blog" routerLinkActive="active">Blog</a>
-        <a routerLink="/articles" routerLinkActive="active">Noticias</a>
+        <a class="focus-outline" routerLink="/home" routerLinkActive="active">Inicio</a>
+        <a class="focus-outline" routerLink="/about" routerLinkActive="active">Nosotros</a>
+        <a class="focus-outline" routerLink="/products" routerLinkActive="active">Productos</a>
+        <a class="focus-outline" routerLink="/faq" routerLinkActive="active">FAQ</a>
+        <a class="focus-outline" routerLink="/blog" routerLinkActive="active">Blog</a>
+        <a class="focus-outline" routerLink="/articles" routerLinkActive="active">Noticias</a>
       </div>
     <!-- <div class="store-container">
       <div class="top">
@@ -56,16 +56,16 @@
 
   <section class="sticky-header" [ngClass]="{'sticky' : isSticky}">
     <div class="header-container">
-      <div class="logo-container">
+      <div class="logo-container focus-outline" [routerLink]="['/']">
         <img src="assets/img/logos/medkush/medkush-logo-horizontal.svg" alt="medkush-logo">
       </div>
       <div class="navigation-container">
-        <a routerLink="/home" routerLinkActive="active">Inicio</a>
-        <a routerLink="/about" routerLinkActive="active">Nosotros</a>
-        <a routerLink="/products" routerLinkActive="active">Productos</a>
-        <a routerLink="/faq" routerLinkActive="active">FAQ</a>
-        <a routerLink="/blog" routerLinkActive="active">Blog</a>
-        <a routerLink="/articles" routerLinkActive="active">Noticias</a>
+        <a class="focus-outline" routerLink="/home" routerLinkActive="active">Inicio</a>
+        <a class="focus-outline" routerLink="/about" routerLinkActive="active">Nosotros</a>
+        <a class="focus-outline" routerLink="/products" routerLinkActive="active">Productos</a>
+        <a class="focus-outline" routerLink="/faq" routerLinkActive="active">FAQ</a>
+        <a class="focus-outline" routerLink="/blog" routerLinkActive="active">Blog</a>
+        <a class="focus-outline" routerLink="/articles" routerLinkActive="active">Noticias</a>
       </div>
       <div class="store-container">
         <!-- <div class="left">
@@ -94,7 +94,7 @@
 
   <div class="header-mobile">
     <div></div>
-    <div class="logo-container">
+    <div class="logo-container focus-outline" [routerLink]="['/']">
       <img src="assets/img/logos/medkush/medkush-logo-horizontal.svg" alt="medkush-logo">
     </div>
     <div class="sidenav-toggler" (click)="toggleSidenav.emit()">
@@ -107,7 +107,7 @@
 
   <div class="sticky-header-mobile" [ngClass]="{'sticky' : isSticky}">
     <div></div>
-    <div class="logo-container">
+    <div class="logo-container focus-outline" [routerLink]="['/']">
       <img src="assets/img/logos/medkush/medkush-logo-horizontal.svg" alt="medkush-logo">
     </div>
     <div class="sidenav-toggler" (click)="toggleSidenav.emit()">

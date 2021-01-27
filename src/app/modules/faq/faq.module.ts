@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { FaqRoutingModule } from './faq-routing.module';
 import { FaqRootComponent } from './components/faq-root/faq-root.component';
 import { MaterialModule } from '../../material.module';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { MaterialModule } from '../../material.module';
   imports: [
     CommonModule,
     FaqRoutingModule,
-    MaterialModule
+    MaterialModule,
+    SharedModule
   ]
 })
 export class FaqModule { }

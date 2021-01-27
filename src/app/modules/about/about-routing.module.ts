@@ -3,7 +3,18 @@ import { Routes, RouterModule } from '@angular/router';
 import { AboutRootComponent } from './components/about-root/about-root.component';
 
 const routes: Routes = [
-  { path: '', component: AboutRootComponent }
+  { path: '',
+    data: { breadcrumb: null },
+    children: [
+      {
+        path: '',
+        component: AboutRootComponent,
+        data: {
+          breadcrumb: null
+        },
+      },
+    ]
+  },
 ];
 
 @NgModule({

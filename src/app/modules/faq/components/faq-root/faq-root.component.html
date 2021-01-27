@@ -1,4 +1,35 @@
 <div class="divider"></div>
-<section class="coming-soon-section">
-  <mat-card class="coming-soon-card">Coming soon</mat-card>
+
+<div class="view-separator"></div>
+
+<div class="container">
+  <app-breadcrumb></app-breadcrumb>
+</div>
+
+<section class="certifications-section">
+  <div class="certifications-title">
+    <div class="certifications-title-container">
+      <div>Preguntas frecuentes</div>
+      <img class="e1" src="../../../assets/img/elements/element-10.svg" alt="" srcset="">
+    </div>
+  </div>
+  <div class="certifications-content">
+    <div class="certifications-container">
+      <mat-accordion>
+        <div *ngFor="let item of questions">
+          <mat-expansion-panel #expansion style="margin-top: 20px;">
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <div class="title"><span><mat-icon style="color: #93ca5c;">help</mat-icon></span>{{item.question}}</div>
+              </mat-panel-title>
+              <mat-panel-description>
+                <!-- <div class="description">Donec dignissim enim quis augue euismod pellentesque. </div> -->
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+            <div [innerHTML]="item.answer"></div>
+          </mat-expansion-panel>
+        </div>
+      </mat-accordion>
+    </div>
+  </div>
 </section>

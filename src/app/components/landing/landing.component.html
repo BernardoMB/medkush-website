@@ -291,12 +291,15 @@ a nivel internacional apoyados de nuestros socios comerciales Riverleaf Biotech 
           <div *ngFor="let product of products; let i = index" class="swiper-slide">
             <div class="product-slide">
               <div class="product-container">
+                <div style="cursor: pointer;" (click)="navigateToProduct(product.id)">
                   <div class="product-image" [style.backgroundImage]="'url(' + products[i].imgUrl + ')'"></div>
                   <div class="name">{{product.name}}</div>
                   <div class="grammage">{{product.grammage}}</div>
                   <div class="price">{{product.price | currency}}</div>
                   <div class="final-price">{{product.price * (1 - product.discount) | currency}}</div>
-                  <button mat-flat-button class="action-button">Agregar al carrito</button>
+                </div>
+                <button mat-flat-button class="action-button">Agregar al carrito</button>
+                <div class="view-product" (click)="navigateToProduct(product.id)">Ver producto</div>
               </div>
             </div>
           </div>

@@ -4,7 +4,18 @@ import { FaqRootComponent } from './components/faq-root/faq-root.component';
 
 
 const routes: Routes = [
-  { path: '', component: FaqRootComponent }
+  { path: '',
+    data: { breadcrumb: null },
+    children: [
+      {
+        path: '',
+        component: FaqRootComponent,
+        data: {
+          breadcrumb: null
+        },
+      },
+    ]
+  },
 ];
 
 @NgModule({

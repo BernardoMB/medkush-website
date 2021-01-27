@@ -1,0 +1,21 @@
+@import '../../../../../styles/variables';
+
+.about-us-container {
+  max-width: 1440px;
+  margin: auto;
+  padding: 20px;
+  .jumbo-text {
+    font-family: "Helvetica Neue", sans-serif;
+    margin-top: 30px;
+    h2 {
+      margin-bottom: 5px;
+    }
+  }
+  .page-title {
+    font-family: "Helvetica Neue", sans-serif;
+    color: $medkush-green;
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: 600;
+  }
+}

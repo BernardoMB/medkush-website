@@ -845,6 +845,9 @@ $develop-border-thickness: 0px;
                   font-weight: 600;
                   text-align: center;
                   line-height: 1;
+                  &:hover {
+                    text-decoration: underline;
+                  }
                 }
                 .grammage {
                   margin-top: 10px;
@@ -888,6 +891,16 @@ $develop-border-thickness: 0px;
                   &:hover {
                     box-shadow: 2px 1000px 1px white inset;
                     color: #545454;
+                  }
+                }
+                .view-product {
+                  color: #545454;
+                  cursor: pointer;
+                  text-transform: uppercase;
+                  font-weight: 400;
+                  font-size: 13px;
+                  &:hover {
+                    text-decoration: underline;
                   }
                 }
               }

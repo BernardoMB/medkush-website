@@ -1,0 +1,101 @@
+@import '../../../../../styles/variables';
+
+.container {
+  max-width: 1440px;
+  margin: auto;
+  padding: 20px;
+}
+
+$develop-border-thickness: 0px;
+.certifications-section {
+  margin-top: 30px;
+  margin-bottom: 60px;
+  .certifications-title {
+    border: $develop-border-thickness solid red;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    .certifications-title-container {
+      border: $develop-border-thickness solid blue;
+      position: relative;
+      max-width: 1440px;
+      margin: auto;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      div {
+        color: #545454;
+        width: 100%;
+        max-width: 900px;
+        text-align: center;
+        font-size: 38px;
+        font-weight: 700;
+        font-size: 38px;
+        font-weight: 700;
+        @media screen and (max-width: 425px) {
+          font-size: 28px;
+        }
+      }
+      .e1 {
+        border: $develop-border-thickness solid yellow;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        height: 310px;
+        z-index: -1;
+        //transform: rotate(180deg);
+        @media screen and (max-width: 1420px) {
+          height: 20vw;
+        }
+        @media screen and (max-width: 940px) {
+          top: -50px;
+        }
+        @media screen and (max-width: 425px) {
+          height: 20vw;
+          top: -30px;
+        }
+      }
+    }
+    @media screen and (max-width: 425px) {
+      margin-top: 10px;
+      margin-bottom: 0px;
+    }
+  }
+  .certifications-content {
+    position: relative;
+    overflow-x: hidden;
+    .certifications-container {
+      position: relative;
+      max-width: 912px;
+      margin: auto;
+      padding: 20px 40px;
+      display: flex;
+      flex-direction: column;
+      ::ng-deep {
+        mat-expansion-panel-header {
+          height: unset !important;
+          padding: 10px 24px;
+          mat-panel-title {
+            // flex-direction: column;
+            .title {
+              color: #6D4975;
+              font-weight: bold;
+              display: flex;
+              align-items: center;
+              text-transform: uppercase;
+              span {
+                margin-right: 10px;
+              }
+              /* font-size: 20px;
+              margin-bottom: 5px;
+              line-height: 1.2; */
+            }
+          }
+        }
+      }
+      @media screen and (max-width: 768px) {
+        padding: 10px 20px;
+      }
+    }
+  }
+}

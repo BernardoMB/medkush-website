@@ -12,10 +12,10 @@ const routes: Routes = [
     children: [
       { path: '', redirectTo: '/home', pathMatch: 'full' },
       { path: 'home', component: LandingComponent, resolve: { productsInfo: ProductsResolverService } },
-      { path: 'about', loadChildren: () => import('./modules/about/about.module').then(mod => mod.AboutModule) },
+      { path: 'about', loadChildren: () => import('./modules/about/about.module').then(mod => mod.AboutModule), data: { breadcrumb: 'Nosotros' } },
       { path: 'products', loadChildren: () => import('./modules/products/products.module').then(mod => mod.ProductsModule), data: { breadcrumb: 'Productos' } },
       { path: 'info', loadChildren: () => import('./modules/info/info.module').then(mod => mod.InfoModule) },
-      { path: 'faq', loadChildren: () => import('./modules/faq/faq.module').then(mod => mod.FaqModule) },
+      { path: 'faq', loadChildren: () => import('./modules/faq/faq.module').then(mod => mod.FaqModule), data: { breadcrumb: 'FAQ' } },
       { path: 'blog', loadChildren: () => import('./modules/blog/blog.module').then(mod => mod.BlogModule) },
       { path: 'articles', loadChildren: () => import('./modules/articles/articles.module').then(mod => mod.ArticlesModule) },
     ],

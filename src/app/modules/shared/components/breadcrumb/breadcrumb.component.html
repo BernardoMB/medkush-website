@@ -1,10 +1,11 @@
 <div class="breadcrumbs">
+  <div class="label" [routerLink]="['/']">Medkush</div>
   <div class="breadcrumb-container" *ngFor="let breadcrumb of breadcrumbs">
-    <div class="link" [routerLink]="breadcrumb.url" routerLinkActive="router-link-active">
-      {{ breadcrumb.label }}
-    </div>
     <div class="separator">
       /
+    </div>
+    <div class="link" [routerLink]="breadcrumb.url" routerLinkActive="router-link-active">
+      {{ breadcrumb.label }}
     </div>
   </div>
 </div>

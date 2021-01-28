@@ -8,14 +8,16 @@
     (closedStart)="onClosedStart()"
   >
     <div class="sidenav-container">
-      <div class="logomark-container focus-outline" [routerLink]="['/']">
+      <div class="logomark-container focus-outline" [routerLink]="['/']" (click)="opened = false">
         <img class="om-logomark" src="/assets/img/logos/medkush/medkush-logo.svg" alt="om logomark"/>
       </div>
       <div class="buttons-conatiner">
         <!-- <button mat-flat-button class="login-button">Iniciar sesión</button>
         <button mat-flat-button class="register-button">Registro</button> -->
-        <a class="login-button">Iniciar sesión</a>
-        <a class="register-button">Registro</a>
+        <!-- <a class="login-button">Iniciar sesión</a>
+        <a class="register-button">Registro</a> -->
+        <button mat-flat-button class="action-button login-button">Iniciar sesión</button>
+        <button mat-flat-button class="action-button register-button">Registro</button>
       </div>
       <div class="search-container">
         <mat-form-field appearance="outline">

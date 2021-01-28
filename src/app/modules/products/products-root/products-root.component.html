@@ -21,7 +21,8 @@
           <div class="price">{{product.price | currency}}</div>
           <div class="final-price">{{product.price * (1 - product.discount) | currency}}</div>
         </div>
-        <button mat-flat-button class="action-button">Agregar al carrito</button>
+        <button mat-flat-button class="action-button" (click)="onWhatsApp(product)">Comprar</button>
+        <!-- <button mat-flat-button class="action-button">Agregar al carrito</button> -->
         <div class="view-product" (click)="navigateToProduct(product.id)">Ver producto</div>
       </div>
     </div>

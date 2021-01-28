@@ -298,7 +298,8 @@ a nivel internacional apoyados de nuestros socios comerciales Riverleaf Biotech 
                   <div class="price">{{product.price | currency}}</div>
                   <div class="final-price">{{product.price * (1 - product.discount) | currency}}</div>
                 </div>
-                <button mat-flat-button class="action-button">Agregar al carrito</button>
+                <button mat-flat-button class="action-button" (click)="onWhatsApp(product)">Comprar</button>
+                <!-- <button mat-flat-button class="action-button">Agregar al carrito</button> -->
                 <div class="view-product" (click)="navigateToProduct(product.id)">Ver producto</div>
               </div>
             </div>
@@ -393,7 +394,7 @@ a nivel internacional apoyados de nuestros socios comerciales Riverleaf Biotech 
           <div class="phrase">Nos encantaría escuchar de ti</div>
           <div class="phrase-2">Contáctanos sin compromiso enviando un mensaje a continuación.</div>
           <div class="button-container">
-            <button class="card-button" (click)="onWhatsApp()">Enviar Whatsapp</button>
+            <button class="card-button" (click)="onContactWhatsApp()">Enviar Whatsapp</button>
           </div>
         </div>
       </div>

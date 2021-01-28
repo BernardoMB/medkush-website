@@ -4,6 +4,7 @@ import { Component, OnInit, ViewChildren, QueryList } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { SwiperConfigInterface, SwiperDirective } from 'ngx-swiper-wrapper';
 import { SwiperOptions } from 'swiper';
+import { Product } from '../../modules/products/interfaces/product.interface';
 
 @Component({
   selector: 'app-landing',
@@ -32,11 +33,8 @@ export class LandingComponent implements OnInit {
           value_area: 800
         }
       },
-      /* color: {
-        value: '#6bb139'
-      }, */
       "color": {
-        "value": ["#BD10E0","#B8E986","#50E3C2","#FFD300","#E86363"]
+        "value": ["#BD10E0","#7dc832","#f78a21","#7be4ff"]
       },
       shape: {
         type: 'circle',
@@ -396,8 +394,11 @@ export class LandingComponent implements OnInit {
     this.router.navigate([`products/${productId}`], { skipLocationChange: false });
   }
 
-  onWhatsApp() {
+  onContactWhatsApp() {
     window.open('https://wa.me/5217771996646?text=Hola,%20me%20interesa%20saber%20más%20sobre%20los%20productos%20de%20Medkush');
   }
 
+  onWhatsApp(product: Product) {
+    window.open(`https://wa.me/5217771996646?text=Hola,%20quiero%20comprar%20el%20producto%20%22${product.name}%22%20de%20de%20Medkush.`);
+  }
 }

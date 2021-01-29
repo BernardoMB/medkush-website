@@ -105,77 +105,25 @@ a nivel internacional apoyados de nuestros socios comerciales Riverleaf Biotech 
     <div class="testimonials-container">
       <div class="swiper-container" [swiper]="config" [(index)]="index">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
+          <div class="swiper-slide" *ngFor="let item of testimonials">
             <div class="testimonial-conatiner">
-              <p>Francisco Hernandez</p>
-              <p><span>Edad: </span>68 años</p>
-              <p><span>Condición: </span>sufre de Parkinson</p>
+              <p>{{item.name}}</p>
+              <p><span>Edad: </span>{{item.age}}</p>
+              <p><span>Condición: </span>{{item.healtCondition}}</p>
               <div class="quote">
                 <div class="top-quote">
                   <div class="q q1">“</div>
                 </div>
-                <div class="text">
-                  Hay cambios notablemente fuertes después de la primer toma de aceite MedKush, la temblorina desapareció en el día uno. Con ningún medicamento tuve tanta mejoría a esta condición. Me siento mucho más relajado y tranquilo. Día 3: tomando 2 dosis (por la mañana y noche) no he tenido temblorina en día y medio.
-                </div>
+                <div class="text" [innerHTML]="item.text"></div>
                 <div class="bottom-quote">
                   <div class="q q2">”</div>
                 </div>
               </div>
               <div style="display: flex; justify-content: flex-end; color: goldenrod;">
-                <mat-icon>star</mat-icon>
-                <mat-icon>star</mat-icon>
-                <mat-icon>star</mat-icon>
-                <mat-icon>star</mat-icon>
-                <mat-icon>star</mat-icon>
+                <div *ngFor="let testimonial of (item.rating) | enumerate">
+                  <mat-icon>star</mat-icon>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="testimonial-conatiner">
-              <p>
-                We understand the <span>power of technology</span> and its impact with business objectives.
-              </p>
-              <p>
-                We help <span>enhance the ideas</span> of our clients, exposing them to possibilities they had never imagined and <span>fulfulling</span> those that they did.
-              </p>
-              <div class="quote q1">“</div>
-              <div class="quote q2">”</div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="testimonial-conatiner">
-              <p>
-                We understand the <span>power of technology</span> and its impact with business objectives.
-              </p>
-              <p>
-                We help <span>enhance the ideas</span> of our clients, exposing them to possibilities they had never imagined and <span>fulfulling</span> those that they did.
-              </p>
-              <div class="quote q1">“</div>
-              <div class="quote q2">”</div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="testimonial-conatiner">
-              <p>
-                We understand the <span>power of technology</span> and its impact with business objectives.
-              </p>
-              <p>
-                We help <span>enhance the ideas</span> of our clients, exposing them to possibilities they had never imagined and <span>fulfulling</span> those that they did.
-              </p>
-              <div class="quote q1">“</div>
-              <div class="quote q2">”</div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="testimonial-conatiner">
-              <p>
-                We understand the <span>power of technology</span> and its impact with business objectives.
-              </p>
-              <p>
-                We help <span>enhance the ideas</span> of our clients, exposing them to possibilities they had never imagined and <span>fulfulling</span> those that they did.
-              </p>
-              <div class="quote q1">“</div>
-              <div class="quote q2">”</div>
             </div>
           </div>
         </div>
@@ -310,18 +258,6 @@ a nivel internacional apoyados de nuestros socios comerciales Riverleaf Biotech 
     </div>
   </div>
 </section>
-
-<!-- <section class="sale">
-  <section class="sale-overlay">
-    <div class="sale-container">
-      <div class="phrase">Navega en nuestras increibles ofertas</div>
-      <div class="line"></div>
-      <div class="container">
-        <div class="discount">20% Off En todo el sitio</div>
-      </div>
-    </div>
-  </section>
-</section> -->
 
 <section class="community-wrapper-2">
   <div class="community">

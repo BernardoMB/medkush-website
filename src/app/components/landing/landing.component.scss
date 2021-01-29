@@ -401,9 +401,14 @@ $develop-border-thickness: 0px;
               right:  0px;
               margin-right: -20px;
             }
+            @media screen and (max-width: 425px) {
+              margin: 0px;
+            }
           }
           @media screen and (max-width: 425px) {
             font-size: 14px;
+            margin-top: 0px;
+            padding: 20px;
           }
         }
       }

@@ -196,6 +196,28 @@ $focus-outline-thickeness: 2px;
   }
 }
 
+.action-button-light {
+  border-radius: 2rem !important;
+  padding: 2px 8px !important;
+  flex-grow: 1 !important;
+  text-align: center !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  line-height: 24px !important;
+  cursor: pointer !important;
+  border: solid 2px transparent !important;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #f68b22, #94217d) !important;
+  background-origin: border-box !important;
+  background-clip: content-box, border-box !important;
+  box-shadow: none !important;
+  box-shadow: 2px 1000px 1px white inset !important;
+  color: #545454 !important;
+  &:hover {
+    box-shadow: none !important;
+    color: white !important;
+  }
+}
+
 // Change autocomplete styles in WebKit
 
 input:-webkit-autofill,

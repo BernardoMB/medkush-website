@@ -1141,6 +1141,9 @@ $develop-border-thickness: 0px;
               line-height: 1.2; */
             }
           }
+          mat-expansion-panel-header-description {
+            align-items: center;
+          }
         }
       }
       @media screen and (max-width: 768px) {

@@ -18,6 +18,7 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
 import { ScrollToTopComponent } from './components/scroll-to-top/scroll-to-top.component';
 import { ParticlesModule } from 'angular-particle';
 import { SharedModule } from './modules/shared/shared.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   direction: 'horizontal',
@@ -39,6 +40,8 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     AppRoutingModule,
     BrowserAnimationsModule,
     SharedModule,
+    FormsModule,
+    ReactiveFormsModule,
     MaterialModule,
     ToastrModule.forRoot({ // ToastrModule added
       // Global options (any individual option can be a global option)

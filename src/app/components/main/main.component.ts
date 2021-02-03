@@ -1,5 +1,6 @@
 import { Component, OnInit, HostListener, ViewEncapsulation, Inject } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
+import { FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-main',
@@ -9,10 +10,14 @@ import { DOCUMENT } from '@angular/common';
 })
 export class MainComponent implements OnInit {
   opened: boolean;
+  searchControl = new FormControl('', [Validators.required, Validators.email]);
 
   constructor(@Inject(DOCUMENT) private _document) { }
 
   ngOnInit(): void {
+    this.searchControl.valueChanges.subscribe((value: string) => {
+
+    });
   }
 
   scrollToTop() {

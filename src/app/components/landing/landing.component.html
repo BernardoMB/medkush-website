@@ -39,6 +39,10 @@
 
 <section class="pattern-divider"></section>
 
+<section *ngIf="showEasterEgg" class="nyanSection">
+  <particles id="nyanParticles"  [params]="nyanParams" [style]="nyanStyle" [width]="nyanWidth" [height]="nyanHeight"></particles>
+</section>
+
 <!-- <section class="as-seen-on">
   <div class="as-seen-on-container">
     <div class="label">As seen on</div>
@@ -60,7 +64,7 @@
 <section class="about-section">
   <div class="about-container">
     <!-- <div style="width: 50px; height: 50px; background-color: red;"></div> -->
-    <div class="title">Nosotros</div>
+    <div class="title" (click)="incrementCount()">Nosotros</div>
     <div class="text">
       <span>Somos una empresa fundada por mexicanos apasionados por mejorar la industria de la salud.</span>
 Estamos dedicados a la investigación y comercialización  de productos a base de <span>CBD</span> con grado medicinal. Contamos con procesos y certificaciones aprobadas

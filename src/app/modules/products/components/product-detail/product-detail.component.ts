@@ -25,6 +25,6 @@ export class ProductDetailComponent implements OnInit {
   }
 
   onWhatsApp(product: Product) {
-    window.open(`https://wa.me/5217771996646?text=Hola,%20quiero%20comprar%20el%20producto%20%22${product.name}%22%20de%20de%20Medkush.`);
+    window.open(`https://wa.me/5217771996646?text=Hola,%20quiero%20comprar%20el%20producto%20%22${product.name}%22%20de%20Medkush.`);
   }
 }
